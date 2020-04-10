@@ -1,0 +1,63 @@
+---
+title: "Testing the thermal buffer of mire groundwater"
+author: "Eduardo Fernández-Pascual, University of Oviedo (fernandezpeduardo@uniovi.es)"
+date: "`r format(Sys.time(), '%d/%m/%Y')`"
+output:
+  bookdown::html_document2
+bibliography: refs.bib
+biblio-style: apalike
+link-citations: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r message = FALSE, echo = FALSE, warning = FALSE}
+library(here); library(kableExtra)
+load(here("results", "logs.RData"))
+source(here("src", "analysis.R"))
+nsites <- length(unique(temperatures$Logger))/2
+```
+
+# Materials and methods
+
+This study took place in the temperate oceanic region of north-western Spain (43º N, 5º W). Local geography and climate are dominated by the Cantabrian Mountains (> 1500 m above sea level), which run parallel to the coast and trap the prevailing NW Atlantic winds. The resulting humid climate harbours the south-western limit of mire communities in Europe [@RN2982; @RN3246]. Rain-fed raised bogs and acid valley mires can be found from the coast to just below the treeline, in poorly drained valleys and former glacial lakes. Glacial lakes undergoing silting develop transition mires and quaking bogs communities in the water-to-land transition. Spring fens appear in the mountains above 1000 m; they range from soft-water poor fens on acid bedrocks, to alkaline calcareous fens on limestone.
+
+A selection of `r nsites` mire sites was made, representing the regional elevation gradient of mire vegetation and the different mire types (Table \@ref(tab:table1))). In each site, two dataloggers (M-Log5W, GeoPrecision, Ettlingen, Germany) were buried at a depth of 5 cm below the upper layer of the soil. They were programmed to record temperature on an hourly basis. One datalogger was placed in a flat waterlogged spot, within the mire. The other dataloggers was placed in the close vicinity, but in a flat and dry area outside the mire. The vegetation was always either mire or pasture, with no shrubs, trees or any other landscape features shading the measuring points. The dataloggers were left on site for approximately five years, after which they were retrieved and their records downloaded. At the moment of retrieval, the internal clock of all the dataloggers had not deviated for more than four hours.
+
+Some steps were taken to clean the logs. First, the records from the first week after installation were removed, to account for the own installation process and the settling of the soils. Second, and because some of the dataloggers had failed at different points in time, a selection was made for each site to keep only time series with records both for the dry and waterlogged points. Afterwards four bioclimatic variables were calculated for each datalogger:
+
+* The mean diurnal range; i.e. the average for the whole period of the daily differences between the maximum and the minimum temperatures recorded in the day.
+* The maximum temperature of the warmest month; i.e. the average of the daily maximum records, for the warmst month.
+* The minimum temperature of the codlest month; i.e. the average of the daily minimum records, for the coldest month.
+* The annual range; i.e. the difference between the maximum temperature of the warmest month and the minimum temperature of the coldest month.
+
+To test if the differences between the dry and the waterlogged points of each site was significant, paired t-tests were used. Tests were one-tailed, according to the following hypotheses: the dry site would have a higher diurnal range, a higher maximum temperature, a lower minimum temperature, and a higher annual range.
+
+# Results
+
+The dataloggers recorded temperatures for five years in five of the sites, four years in two, and two years in one.
+
+```{r }
+print(ttests)
+```
+
+# Tables
+
+```{r table1, echo = FALSE}
+table1 %>% kable(caption = "Mire sites included in this study, indicating the type of fen, the elevation, coordinates, and length of the temperature recording period.", booktabs = TRUE) %>% kable_styling(latex_options = c("striped", "hold_position"))
+```
+
+```{r, echo = FALSE}
+table2 %>% kable(caption = "Bioclimatic variables calculated for the mire sites, using the hourly temperature records.", booktabs = TRUE) %>% kable_styling(latex_options = c("striped", "hold_position"))
+```
+
+# Figures
+
+```{r echo = FALSE, fig.pos = "H", fig.cap = "Hourly soil temperature records at the mire sites. The blue series was recorded within the mire, in a waterloged area. The red series was recorded in a neighbouring dry area. Dataloggers were buried at 5 cm depth.", fig.align = "center", fig.width=3, fig.height=8}
+plot1
+```
+
+# References
