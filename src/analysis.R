@@ -1,4 +1,6 @@
-library(tidyverse); library(ggthemes); library(lubridate)
+library(tidyverse); library(ggthemes); library(lubridate); library(here)
+
+#Iload(here("results", "logs.RData"))
 
 # Calculations
 
@@ -139,7 +141,7 @@ recordsdf %>%
   ggplot(aes(x = Time, y = Temperature, color = Groundwater)) +
   geom_hline(yintercept = 0, linetype = "dashed") +
   geom_line(alpha = 0.85) +
-  facet_wrap(~ Facet, ncol = 1) +
+  facet_wrap(~ Facet, ncol = 4) +
   xlab("Time (hourly records)") + ylab("Temperature (ºC)") +
   #scale_color_manual(values = c("darkorchid", "gold")) +
   theme_tufte() +
@@ -147,4 +149,28 @@ recordsdf %>%
         legend.position = "top", 
         legend.justification = "center",
         legend.title = element_blank()) +
-  guides(colour = guide_legend(override.aes = list(alpha=1))) -> plot1
+  guides(colour = guide_legend(override.aes = list(alpha = 1))) -> plot1
+
+# Fig 2
+
+merge(header, bioclimatics) %>%
+  select(Site, Groundwater, Mean.Diurnal.Range:Temperature.Annual.Range) %>%
+  gather(Trait, Value, Mean.Diurnal.Range:Temperature.Annual.Range) %>%
+  mutate(Trait = gsub("\\.", " ", Trait), 
+         Value = round(Value, 2)) %>%
+  group_by(Trait, Groundwater) %>%
+  summarise(y = mean(Value), SD = sd(Value), n = length(Value),
+            SE = SD/sqrt(n)) %>%
+  ggplot(aes(x = Groundwater, y = y, ymin = y - SE, ymax = y + SE,
+             fill = Groundwater)) +
+  geom_bar(position = "dodge", stat = "identity", alpha = 0.7) +
+  facet_wrap(~ Trait, scales = "free", strip.position = "left", ncol = 4) +
+  geom_errorbar(width = .2, position = position_dodge(.9),
+                aes(color = Groundwater), show.legend = FALSE) +
+  theme_tufte() +
+  theme(text = element_text(size = 10),
+        legend.position = "top", 
+        legend.justification = "center",
+        legend.title = element_blank(),
+        strip.placement = "outside",
+        axis.title = element_blank()) -> plot2
