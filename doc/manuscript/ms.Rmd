@@ -1,12 +1,15 @@
 ---
-title: "Testing the thermal buffer of mire groundwater"
-author: "Eduardo Fernández-Pascual, University of Oviedo (fernandezpeduardo@uniovi.es)"
+title: "Mire microclimate: groundwater buffers temperature in waterlogged versus dry soils"
+subtitle: "Short title: Testing the thermal buffer of mire groundwater"
+author: "Eduardo Fernández-Pascual. Correspondence: Departamento de Biología de Organismos y Sistemas, Universidad de Oviedo; C/ Catedrático Rodrigo Uría, 33006 Oviedo/Uviéu, Spain; Tel.: +34985104787; email: efernandezpascual@gmail.com"
 date: "`r format(Sys.time(), '%d/%m/%Y')`"
-output:
-  bookdown::html_document2
+output: 
+  bookdown::word_document2:
+    reference_docx: ijctemplate.docx
 bibliography: refs.bib
 biblio-style: apalike
 link-citations: yes
+always_allow_html: true
 ---
 
 ```{r setup, include=FALSE}
@@ -15,10 +18,20 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 ```{r message = FALSE, echo = FALSE, warning = FALSE}
-library(here); library(kableExtra)
+library(here); library(kableExtra); library(flextable)
 load(here("results", "logs.RData"))
 source(here("src", "analysis.R"))
 ```
+
+# Graphical abstract
+
+![Mires are semi-terrestrial wetlands that remain waterlogged for most of the year. Waterlogged soils experience a thermal buffer effect that isolates them from surrounding temperature variations. This article tests the buffer effect in waterlogged mire soils and adjacent sry soils.](Laguna de Reconcos.jpg)
+
+# Abstract
+
+# Keywords
+
+Microniche, fen, bog, dataloggers, azonal habitats, wetlands, Cantabrian Mountains
 
 # Introduction
 
@@ -45,20 +58,30 @@ To test if the differences between the dry and the waterlogged points of each si
 
 # Results
 
-The dataloggers recorded temperatures for five years in five of the sites, four years in two, and two years in one (Fig. \@ref(fig:fig1)). A visual inspection of the time series shows more homogeneous temperatures in the waterlogged time series, which are almost always encompassed within the dry time series. The bioclimatic variables (Table \@ref(tab:table2)) support this impression. The maximum temperatures of the warmest months are usually higher in the dry measuring points, by more than 6 ºC in some sites, both at low (El Molinucu, La Malva) and high (La Recoleta) elevations. The opposite is true for the minimums of the coldest months, in which case the temperature is generally colder in the dry points, although the difference is less pronounced than for the maximums. The mean diurnal range of temperatures is wider in the dry sites, as is annual temperature range; and again the effect is larger in the low sites and in La Recoleta. The t-tests supported the original hypotheses (Fig. \@ref(fig:fig2)); namely waterlogged measuring points had (a) smaller diurnal fluctuactions (t = `r ttests %>% filter(Trait == "Mean.Diurnal.Range") %>% pull(t.statistic) %>% round(2)`, p = `r ttests %>% filter(Trait == "Mean.Diurnal.Range") %>% pull(t.p.value) %>% round(3)`, effect size = `r ttests %>% filter(Trait == "Mean.Diurnal.Range") %>% pull(t.estimate) %>% round(2)` ºC); (b) lower maximums (t = `r ttests %>% filter(Trait == "Max.Temperature.of.Warmest.Month") %>% pull(t.statistic) %>% round(2)`, p = `r ttests %>% filter(Trait == "Max.Temperature.of.Warmest.Month") %>% pull(t.p.value) %>% round(3)`, effect size = `r ttests %>% filter(Trait == "Max.Temperature.of.Warmest.Month") %>% pull(t.estimate) %>% round(2)` ºC); (c) higher minimums (t = `r ttests %>% filter(Trait == "Min.Temperature.of.Coldest.Month") %>% pull(t.statistic) %>% round(2)`, p = `r ttests %>% filter(Trait == "Min.Temperature.of.Coldest.Month") %>% pull(t.p.value) %>% round(3)`, effect size = `r ttests %>% filter(Trait == "Min.Temperature.of.Coldest.Month") %>% pull(t.estimate) %>% round(2)` ºC), and (d) smaller annual fluctuations (t = `r ttests %>% filter(Trait == "Temperature.Annual.Range") %>% pull(t.statistic) %>% round(2)`, p = `r ttests %>% filter(Trait == "Temperature.Annual.Range") %>% pull(t.p.value) %>% round(3)`, effect size = `r ttests %>% filter(Trait == "Temperature.Annual.Range") %>% pull(t.estimate) %>% round(2)` ºC). 
+The dataloggers recorded temperatures for five years in five of the sites, four years in two, and two years in one (Fig. \@ref(fig:fig1)). A visual inspection of the time series shows more homogeneous temperatures in the waterlogged time series, which are almost always encompassed within the dry time series. The bioclimatic variables (Fig. \@ref(fig:fig2)) support this impression. The maximum temperatures of the warmest months are usually higher in the dry measuring points, by more than 6 ºC in some sites, both at low (El Molinucu, La Malva) and high (La Recoleta) elevations. The opposite is true for the minimums of the coldest months, in which case the temperature is generally colder in the dry points, although the difference is less pronounced than for the maximums. The mean diurnal range of temperatures is wider in the dry sites, as is annual temperature range; and again the effect is larger in the low sites and in La Recoleta. The t-tests supported the original hypotheses; namely waterlogged measuring points had (a) smaller diurnal fluctuactions (t = `r ttests %>% filter(Trait == "Mean.Diurnal.Range") %>% pull(t.statistic) %>% round(2)`, p = `r ttests %>% filter(Trait == "Mean.Diurnal.Range") %>% pull(t.p.value) %>% round(3)`, effect size = `r ttests %>% filter(Trait == "Mean.Diurnal.Range") %>% pull(t.estimate) %>% round(2)` ºC); (b) lower maximums (t = `r ttests %>% filter(Trait == "Max.Temperature.of.Warmest.Month") %>% pull(t.statistic) %>% round(2)`, p = `r ttests %>% filter(Trait == "Max.Temperature.of.Warmest.Month") %>% pull(t.p.value) %>% round(3)`, effect size = `r ttests %>% filter(Trait == "Max.Temperature.of.Warmest.Month") %>% pull(t.estimate) %>% round(2)` ºC); (c) higher minimums (t = `r ttests %>% filter(Trait == "Min.Temperature.of.Coldest.Month") %>% pull(t.statistic) %>% round(2)`, p = `r ttests %>% filter(Trait == "Min.Temperature.of.Coldest.Month") %>% pull(t.p.value) %>% round(3)`, effect size = `r ttests %>% filter(Trait == "Min.Temperature.of.Coldest.Month") %>% pull(t.estimate) %>% round(2)` ºC), and (d) smaller annual fluctuations (t = `r ttests %>% filter(Trait == "Temperature.Annual.Range") %>% pull(t.statistic) %>% round(2)`, p = `r ttests %>% filter(Trait == "Temperature.Annual.Range") %>% pull(t.p.value) %>% round(3)`, effect size = `r ttests %>% filter(Trait == "Temperature.Annual.Range") %>% pull(t.estimate) %>% round(2)` ºC). 
 
 # Discussion
 
-Less effect in winter could be because this is soil (snow, etc)
+The results presented here prove the existence of a thermal buffer effect in waterlogged mire soils, when compared with adjacent dry soils. The mire thermal buffer had been compared previously with air temperatures derived from models, with generally similar results [@RN2356; @RN4675]. The mire buffer had also been compared to dry soils but only during the growing season [@RN3204; @RN3060]; our results confirm those findings and extend them to the full year. Therefore, there exists a thermal buffer effect in mire soils that makes their temperatures less extreme than the surrounding landscape. This highlights the importance of using fine-scale microclimatic data to assess vegetation responses to climate change [@RN4683].
+
+One important difference with previous studies is the importance of the buffer during winter. The articles that had used model air temperatures as a control concluded that the buffer effect was stronger at the cold end of the thermal gradient, i.e. in winter and at night [@RN2356; @RN4675]. In the case of this investigation, the situation was reverse: the effect was weaker when considering the minimum temperatures of the cold period. This indicates the importance of identifying root temperatures when working with plant communities. At high elevations of the study region, the soil can remain covered by snow for periods of winter, and this has its own insulating effect on soil temperatures, an effect which is not captured when using model derived air temperatures [@RN2392]. Nonetheless, these records were made in South-Western Euope, and they should be repeated at more northern latitudes, where the winter effect may be more relevant [@RN2356; @RN4675].
+
+The buffering effect was much stronger during the summer. This was most noticeable in the two lowest elevations. Specially in La Malva, very high temperatures (> 40ºC) were recorded during summer. This site is in a south-facing slope on limestone, a place experiencing sub-Mediterranean conditions at the micro-scale [@RN4681]. This suggests the importance of groundwater in the existence of mire vegetation in Mediterranean areas [@RN4682], not only from the water-availability aspect, but also providing cooling regulation during summer [@RN3344].  
+
+In summary, this article shows that waterlogged mire soils have a thermal buffer when compared to adjacent soils, contributing to their behaviour as mild island habitats in a landscape that can be more thermally variable [@RN4675]. The effect occurs during cold and warm periods, but it is stronger during the summer at least in the study area. Future recording schemes are needed to obtain local soil temperatures from other latitudes, and from more microtopographies within the same mire.
+
+# Data availability
+
+Upon publication, the original temperature records along with R analysis scripts will be uploaded to a public repository in GitHub.
+
+# Acknowledgements
+
+E.F.P. received financial support from the Government of Asturias and the FP7 – Marie Curie - COFUND programme of the European Commission (Grant ‘Clarín’ ACB17-19). 
 
 # Tables
 
 ```{r table1, echo = FALSE}
-table1 %>% kable(caption = "Mire sites included in this study, indicating the type of fen, the elevation, coordinates, and length of the temperature recording period.", booktabs = TRUE) %>% kable_styling(latex_options = c("striped", "hold_position"))
-```
-
-```{r table2, echo = FALSE}
-table2 %>% kable(caption = "Bioclimatic variables calculated for the mire sites, using the hourly temperature records.", booktabs = TRUE) %>% kable_styling(latex_options = c("striped", "hold_position"))
+regulartable(table1) %>% width(width = 1) %>% set_caption("Mire sites included in this study, indicating the type of fen, the elevation, coordinates, and length of the temperature recording period.")
 ```
 
 # Figures
