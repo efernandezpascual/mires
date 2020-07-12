@@ -1,17 +1,17 @@
-"Site","Logger","Groundwater","Mire","Installed","Longitude","Latitude","Elevation"
-"El Molinucu","A511AE","Dry","Raised bog",2014-11-18,-5.53735697088299,43.3948849817863,284
-"El Molinucu","A5023A","Waterlogged","Raised bog",2014-11-18,-5.53793352328826,43.3936509673731,284
-"El Riotuertu","A50543","Dry","Alkaline fen",2014-09-11,-5.94630886084295,43.0115634460568,1820
-"El Riotuertu","A50554","Waterlogged","Alkaline fen",2014-09-11,-5.94659158372822,43.0115529876372,1820
-"La Bruxa","A50544","Dry","Alkaline fen",2014-09-15,-6.20979952501121,43.0252023505649,1528
-"La Bruxa","A50548","Waterlogged","Alkaline fen",2014-09-15,-6.20992619270634,43.0251153979427,1528
-"La Malva","A511F6","Dry","Alkaline fen",2014-09-15,-6.25277178214538,43.1195989351525,700
-"La Malva","A511E8","Waterlogged","Alkaline fen",2014-09-15,-6.25283599309044,43.1195374484616,700
-"La Recoleta","A50555","Dry","Quaking bog",2014-09-11,-6.10971796229613,43.0186287565859,1768
-"La Recoleta","A50556","Waterlogged","Quaking bog",2014-09-11,-6.10964948809246,43.0185189748689,1768
-"La Vega Comeya","A511BE","Dry","Raised bog",2013-11-12,-4.9867662703411,43.2878646620083,822
-"La Vega Comeya","A511C1","Waterlogged","Raised bog",2013-11-12,-4.987953884108,43.2872407319011,822
-"La Vega Lliordes","A511BC","Dry","Alkaline fen",2014-10-28,-4.84546933782745,43.1522303231281,1878
-"La Vega Lliordes","A511C9","Waterlogged","Alkaline fen",2014-10-28,-4.84491914530698,43.1523382488576,1878
-"La Veiga Cimera","A50319","Dry","Acid fen",2014-09-15,-6.2524857705978,43.0273613788179,1552
-"La Veiga Cimera","A50482","Waterlogged","Acid fen",2014-09-15,-6.25229421341208,43.0269785951195,1552
+"Longitude","Latitude","Site","Logger","Groundwater","Mire","Installed","Elevation","Diurnal range","Summer max","Winter min","Annual range"
+-4.846101768,43.15043018,"La Vega Lliordes","A511C9","Waterlogged","Alkaline fen",2014-10-28,1878,6.9,14.9,-4.9,19.8
+-4.846651935,43.15032225,"La Vega Lliordes","A511BC","Dry","Alkaline fen",2014-10-28,1878,6.9,14.9,-4.9,19.8
+-4.987945507,43.28595376,"La Vega Comeya","A511BE","Dry","Raised bog",2013-11-12,822,6.6,20.9,1.7,19.2
+-4.989133059,43.28532982,"La Vega Comeya","A511C1","Waterlogged","Raised bog",2013-11-12,822,6.6,20.9,1.7,19.2
+-5.53886846,43.39296927,"El Molinucu","A511AE","Dry","Raised bog",2014-11-18,284,7,24.4,4.7,19.7
+-5.539444957,43.39173526,"El Molinucu","A5023A","Waterlogged","Raised bog",2014-11-18,284,7,24.4,4.7,19.7
+-5.947793456,43.00964624,"El Riotuertu","A50543","Dry","Alkaline fen",2014-09-11,1820,8.3,16.8,-5.2,22
+-5.948076166,43.00963578,"El Riotuertu","A50554","Waterlogged","Alkaline fen",2014-09-11,1820,8.3,16.8,-5.2,22
+-6.111127383,43.01659952,"La Recoleta","A50556","Waterlogged","Quaking bog",2014-09-11,1768,8.2,16.3,-5.5,21.8
+-6.111195857,43.0167093,"La Recoleta","A50555","Dry","Quaking bog",2014-09-11,1768,8.2,16.3,-5.5,21.8
+-6.211273364,43.0232815,"La Bruxa","A50544","Dry","Alkaline fen",2014-09-15,1528,8.2,18.6,-3.2,21.8
+-6.211400025,43.02319455,"La Bruxa","A50548","Waterlogged","Alkaline fen",2014-09-15,1528,8.2,18.6,-3.2,21.8
+-6.253766304,43.02505716,"La Veiga Cimera","A50482","Waterlogged","Acid fen",2014-09-15,1552,8.2,18.4,-3.4,21.8
+-6.253957863,43.02543994,"La Veiga Cimera","A50319","Dry","Acid fen",2014-09-15,1552,8.2,18.4,-3.4,21.8
+-6.254246131,43.11767651,"La Malva","A511F6","Dry","Alkaline fen",2014-09-15,700,8,23,1.6,21.4
+-6.254310338,43.11761502,"La Malva","A511E8","Waterlogged","Alkaline fen",2014-09-15,700,8,23,1.6,21.4

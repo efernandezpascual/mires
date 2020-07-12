@@ -14,43 +14,33 @@ read_gp5 <- function(x)
     dplyr::select(Logger, Time, Temperature)
 }
 
-# Functions convert coordinates to decimal degrees
-
-decdeg30T <- function(x) { x -> o1 
-  o1 %>% dplyr::select(ED50X, ED50Y) -> o2
-  SpatialPoints(o2, proj4string = CRS("+proj=utm +zone=30T +datum=WGS84")) -> o3
-  spTransform(o3, CRS("+proj=longlat +datum=WGS84")) %>% data.frame -> o4
-  colnames(o4) <- c("Longitude", "Latitude")
-  o1 %>% dplyr::select(-c(ED50X, ED50Y)) -> o5
-  cbind(o5, o4)
-}
-
-decdeg29T <- function(x) { x -> o1 
-  o1 %>% dplyr::select(ED50X, ED50Y) -> o2
-  SpatialPoints(o2, proj4string = CRS("+proj=utm +zone=29T +datum=WGS84")) -> o3
-  spTransform(o3, CRS("+proj=longlat +datum=WGS84")) %>% data.frame -> o4
-  colnames(o4) <- c("Longitude", "Latitude")
-  o1 %>% dplyr::select(-c(ED50X, ED50Y)) -> o5
-  cbind(o5, o4)
-}
+# # Functions convert coordinates to decimal degrees
+# 
+# decdeg30T <- function(x) { x -> o1 
+#   o1 %>% dplyr::select(ED50X, ED50Y) -> o2
+#   SpatialPoints(o2, proj4string = CRS("+proj=utm +zone=30T +datum=WGS84")) -> o3
+#   spTransform(o3, CRS("+proj=longlat +datum=WGS84")) %>% data.frame -> o4
+#   colnames(o4) <- c("Longitude", "Latitude")
+#   o1 %>% dplyr::select(-c(ED50X, ED50Y)) -> o5
+#   cbind(o5, o4)
+# }
+# 
+# decdeg29T <- function(x) { x -> o1 
+#   o1 %>% dplyr::select(ED50X, ED50Y) -> o2
+#   SpatialPoints(o2, proj4string = CRS("+proj=utm +zone=29T +datum=WGS84")) -> o3
+#   spTransform(o3, CRS("+proj=longlat +datum=WGS84")) %>% data.frame -> o4
+#   colnames(o4) <- c("Longitude", "Latitude")
+#   o1 %>% dplyr::select(-c(ED50X, ED50Y)) -> o5
+#   cbind(o5, o4)
+# }
 
 # Read logger header data
 
 read.table("data/Loggers.txt", sep = "\t", header = TRUE) %>%
   mutate(Installed = as.POSIXct(Installed, 
                                 format ="%d/%m/%Y", 
-                                tz = "UTC")) -> df1
-
-df1 %>% 
-  filter(ED50Zone == "29T") %>%
-  decdeg29T -> df29T
-
-df1 %>% 
-  filter(ED50Zone == "30T") %>%
-  decdeg30T -> df30T
-
-rbind(df29T, df30T) %>%
-  select(-c(Name, ED50Zone)) -> header
+                                tz = "UTC")) %>%
+  select(-c(Name, ED50Zone:ED50Y, Datum)) -> header
 
 header %>%
   group_by(Site) %>%
@@ -127,7 +117,7 @@ logs.clean %>%
   ggplot(aes(x = day, y = dif)) + 
   geom_line() # Problem seems to be around 2014-10-20
 
-# Bacause of the few records I'll remove this site
+# Because of the few records I'll remove this site
 
 logs.clean %>% 
   filter(! Site %in% c("Los Cándanos")) -> logs.clean2
@@ -148,6 +138,22 @@ logs.clean2 %>%
 header %>%
   filter(Logger %in% temperatures$Logger) ->
   header
+
+# Get CHELSA bioclimatic variables
+
+bio2 <- raster::raster("../#wwfmap/CHELSA/CHELSA_bio10_02.tif") # Diurnal range from CHELSA
+bio5 <- raster::raster("../#wwfmap/CHELSA/CHELSA_bio10_05.tif") # Max of the warmest from CHELSA
+bio6 <- raster::raster("../#wwfmap/CHELSA/CHELSA_bio10_06.tif") # Min of the coldest from CHELSA
+
+pts <- header
+sp::coordinates(pts) <- ~Longitude+Latitude # Make points a spatial object
+sp::proj4string(pts) <- sp::CRS("+proj=longlat + ellps=WGS84") # Asign projection
+Chelsa <- data.frame(sp::coordinates(pts)) # Create data.frame with the Enscobase points
+Chelsa$`Diurnal range` <- raster::extract(bio2, pts)/10 # Extract diurnal range from CHELSA layer, correct units
+Chelsa$`Summer max` <- raster::extract(bio5, pts)/10 # Extract max warmest from CHELSA layer, correct units
+Chelsa$`Winter min` <- raster::extract(bio6, pts)/10 # Extract min coldest from CHELSA layer, correct units
+Chelsa$`Annual range` <- Chelsa$`Summer max` - Chelsa$`Winter min` # Calculate bio7, annual range
+header <- merge(header, Chelsa, by = c("Longitude", "Latitude"))
 
 write.csv(temperatures, "results/temperatures.csv", row.names = FALSE)
 write.csv(header, "results/header.csv", row.names = FALSE)
