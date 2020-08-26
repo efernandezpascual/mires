@@ -1,130 +1,211 @@
 ---
 title: "Ref. JOC-20-0599 - Response to reviewers"
-author: "Eduardo Fernández Pascual & Eva Correia-Álvarez"
-date: "`r format(Sys.time(), '%d %B, %Y')`"
-output: html_document
+author: "Eduardo Fernández-Pascual & Eva Correia-Álvarez"
+date: "`r format(Sys.time(), '%d/%m/%Y')`"
+output: pdf_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Response to the Editor
+# Editor
 
-# Response to Referee 1
+> *Both reviewers found this to be an interesting study. There is room to expand on your results/discussion as highlighted by both reviewers to improve upon the rigor and impact of this work. One upshot of the study is that mire regions might be climate refugia. Figure 3 gets at this point for summer Tmax spatially. I wonder if one can also show how soil temperatures may vary at paired sites during exceptionally warm daily temperatures during the warm season (e.g., complementary temporal analysis).*
 
-# Response to Referee 2
+We have expanded our discussion of the results as indicated. We have included a new figure (Figure 5) showing the complementary variation in paired sites during exceptionally warm days (i.e. days in the 90th percentile of daily maximums for the site). Generally, we have implemented all recommendations of the reviewers, except for the trend analysis suggested by reviewer 2. We do not have access to the data required to do such an analysis, since analysing the regional evolution of climate was not one of the objectives of our project. 
 
-Dear Dr Fernández-Pascual
+# Reviewer: 1
 
-We recognise that the impact of the COVID-19 pandemic may affect your ability to return your revised manuscript to us within the requested timeframe. If this is the case, please let us know.
+> *This is a short and simple study comparing 5cm soil temperatures in mire habitats with adjacent drier microhabitats. It could be of interest to some readers, although it could use some polish and set in a broader context.  L15 – I think a yes/no type hypothesis about climate variability is not very interesting given we already have a priori expectations in this regard (e.g. L61-65, Ashcroft & Gollan 2013 Agric. For. Meteorol. 176:77-89. I would focus more on a quantitative question like: how different are they? What are you finding that is different from what we already know?*
 
-Manuscript # JOC-20-0599 entitled "Mire microclimate: groundwater buffers temperature in waterlogged versus dry soils" which you submitted to the International Journal of Climatology, has been reviewed.  The comments of the referee(s), all of whom are leading international experts in this field, are included with this letter.
-
-The reviewers believe that the paper has potential to be published in the International Journal of Climatology, but major revisions are required. Revisions in this category may involve substantial text changes, recalculations or new analyses in addition to more minor clarifications and corrections.  In your revisions, please address all of the points made by each reviewer, amend the manuscript accordingly, and include a point-by-point response to each reviewer comment with your response.
-
-Both reviewers found this to be an interesting study. There is room to expand on your results/discussion as highlighted by both reviewers to improve upon the rigor and impact of this work.
-
-One upshot of the study is that mire regions might be climate refugia. Figure 3 gets at this point for summer Tmax spatially. I wonder if one can also show how soil temperatures may vary at paired sites during exceptionally warm daily temperatures during the warm season (e.g., complementary temporal analysis).
-
-Because the manuscript needs major revisions, I will send the revised manuscript and your responses back to some or all of the reviewers for further review. Please note that submitting a revision of your manuscript does not guarantee eventual acceptance. I would like to receive the revised manuscript as soon as is convenient, but by 24-Nov-2020 at the latest.
-
-This should be sufficient time given the nature of the revisions, but please communicate with me via email if you need an extension of the deadline.
-
-If the reviewers have suggested that the language of the current version of your manuscript does not allow a thorough evaluation, we recommend that you have your paper professionally edited for English language by a service such as Wiley’s at http://wileyeditingservices.com. Please note that while this service will greatly improve the readability of your paper, it does not guarantee acceptance of your paper by the journal.
-
-Once again, thank you for submitting your manuscript to the International Journal of Climatology and I look forward to  receiving your revision.
+We have changed the question as suggested to focus on the quantification of the effect, and modified the relevant parts of the manuscript to reflect this change.
 
 
-Sincerely,
+> *L25 – What do you mean by failed to predict? E.g. r2 < 0.5? RMSE > 2oC? Spatial pattern wrong? Consistent bias?*
 
-Dr John Abatzoglou
-Associate Editor, International Journal of Climatology
-jabatzoglou@ucmerced.edu
+We have changed this sentence to comply with the new approach using correlation and RMSE (see below), and now indicate in the abstract what we mean regarding p-value, r and RMSE.
 
-***************************************************************************
-Instructions for submitting your revised manuscript:
+> *L42 – “has been”*
 
-To submit your revised manuscript, log on to http://mc.manuscriptcentral.com/joc and click on ‘Author Centre’. Click the link in the ‘Manuscripts with Decisions’ list. Click on the ‘create a revision’ link for the appropriate manuscript.
+Changed.
 
-Please note:
--Once you begin to submit the revision, the 'create a revision' link disappears and the manuscript moves into your Revised Manuscripts in Drafts list. The option reappears if you delete the revision before it is actually submitted.
+> *L88-94: Like L15 above, we already have strong evidence that soil moisture acts as a buffer, so testing yes/no hypothesis about this make the research more trivial that it could be. I would focus more on how different they are etc.*
 
-Should a revised manuscript be accepted, the files will be sent electronically to the Production Department. It is thus very important that the files uploaded at revision are in their final format and of sufficient quality for publication. At revision, you should provide:
-a) The manuscript text in Word format (all tracked changes removed). This file should be text only, should not contain figures and must not exceed 1MB in size. Tables must not be embedded, but provided in editable format.
-b) Figures as high-resolution TIFF, EPS or PDF files; colour in CMYK format.
-c) Supporting Information files as required. Please note that the maximum file size for each Supporting Information file is 20 MB.
-d) A copy of the text file with changes highlighted.
-e) A letter of response to the reviewers' comments, detailing point-by-point the changes made and giving reasons for those not made.
+We have changed the question as suggested (see above).
 
-Revised manuscripts must be in their final form when submitted. The proofs received later are for correction of typographical errors only. They should not be used for final changes to articles; such changes must be made to the manuscript before it goes to Production
+> *L142 – significantly? P<0.05?*
 
-***************************************************************************
+We now indicate the p-value threshold whenever we use the word “significant”. In this case, we use the word “considerably” because we refer to a qualitative visual evaluation of the raw data shown in Figure 2, before going into the statistical analyses in the subsequent paragraphs.
 
-Due Date of Revised Submission: 24-Nov-2020
+> *L155 – This is more like a results section with actual figures. Would be good to see 95% CI for the effect sizes. i.e. instead of just effect size = -2.29oC, you would give a range like -1.5 to -3.0.*
 
-***************************************************************************
+We have included the CI. Please note that since this is the result of a one-tailed t-test, one of the limits of the CIs is -infinite or infinite.
 
+> *Fig. 3 – Make the scales on the y and x axes the same and add a 1:1 line. R2 tells you the correlation between soil and air temps but not the bias. You could have a high r2 and still have a high RMSE indicating poor predictions.*
 
+We have changed the figure as requested. For the RMSE comment, please see below.
 
-Referee(s)' Comments to Author:
+> *L160-165 – building on above comment, note both the r2 and RMSE to capture both correlation and bias. These results will be affected by a number of factors: 1) the soil moisture effect you are interested in 2) the height of observation (2m air temperatures v 5cm soil temperatures) 3) the temporal scale of obvservation (the 1-5 years of your study is different to Chelsa) 4) The spatial scale – does Chelsa reflect the actual elevation of your sites.*
 
-Reviewer: 1
+We have followed the suggestion and now use RMSE to measure the accuracy of the CHELSA values in relation to our measurements. To indicate the correlation between CHELSA and our measurements, instead of the linear model of the previous version, we now use Pearson’s correlation. We have changed the text accordingly. We also note these considerations regarding the factors affecting the CHELSA/soil measure correspondence in the appropriate place of the discussion.
 
-Comments to the Author
-This is a short and simple study comparing 5cm soil temperatures in mire habitats with adjacent drier microhabitats. It could be of interest to some readers, although it could use some polish and set in a broader context.
+> *L167 – “Quantify the size of the thermal buffer effect” rather than “prove the existence”. We already know it exists.*
 
+Changed.
 
-Specific comments:
+> *Discussion: Where results are similar or different from other studies it would be nice to delve deeper into why. Were the observations at the same depth? E.g. We expect diurnal range to decrease with depth so studies at different depths are not necessarily comparable. What do the results tell us more generally about mires elsewhere, or where sites may vary along a moisture gradient rather than just be mire or non-mire?*
 
-L15 – I think a yes/no type hypothesis about climate variability is not very interesting given we already have a priori expectations in this regard (e.g. L61-65, Ashcroft & Gollan 2013 Agric. For. Meteorol. 176:77-89. I would focus more on a quantitative question like: how different are they? What are you finding that is different from what we already know?
+We have expanded the discussion as suggested, indicating comparisons about the depth of measuring, and making a general interpretation about mires elsewhere. We also comment the relevance of this effect in all environments with a moisture gradient, such as alpine micro-topographies.
 
-L25 – What do you mean by failed to predict? E.g. r2 < 0.5? RMSE > 2oC? Spatial pattern wrong? Consistent bias?
+> *198-208 – Don’t read too much into individual sites. When you only have 8 sites each will be unique in one way or another and we expect some results to be different. What we are interested in is trends that are consistent across all 8 sites.*
 
-L42 – “has been”
+We agree with the reviewer on this point, we believe it is worthy to highlight some of the extreme cases among our sites for the purpose of discussion, but no firm conclusions can be made with 8 sites. We now state this limitation in the discussion.
 
-L88-94: Like L15 above, we already have strong evidence that soil moisture acts as a buffer, so testing yes/no hypothesis about this make the research more trivial that it could be. I would focus more on how different they are etc.
+# Reviewer: 2
 
-L142 – significantly? P<0.05?
+> *Very interesting datasets. More rigor in describing how analyses were performed and digging a little deeper into the results is needed. Peatland terms vary somewhat from N. America to Europe / Eurasia. Clearly defining hydrological terms like "mire" will be useful - is this a broad term for all peatlands or simply groundwater fed ones?  You describe a groundwater buffer effect, but include wetlands in your study whose hydrology may be dominated moreso by precipitation inputs (bogs, raised bogs). While it may not be practical to fully describe source hydrology to your sites from in situ measurements, some more information on hydrology of these wetlands would be useful. Does a gradient in groundwater connection strength exist among your sites?*
 
-L155 – This is more like a results section with actual figures. Would be good to see 95% CI for the effect sizes. i.e. instead of just effect size = -2.29oC, you would give a range like -1.5 to -3.0.
+We have expanded the description of mire, including the definition of bogs and fens. We also describe better the classification we use (based on EUNIS, we provide links to the EUNIS sheets for our habitat types) and give more details about the hydrology of our sites. Please note that our two bogs are classified as raised bogs because of their vegetation, but they are very poorly developed, with small isolated hummocks. Therefore, they are greatly influenced by soil water coming from streams (they develop in waterlogged valleys) and cannot be considered to be fed only by precipitation.
 
-Fig. 3 – Make the scales on the y and x axes the same and add a 1:1 line. R2 tells you the correlation between soil and air temps but not the bias. You could have a high r2 and still have a high RMSE indicating poor predictions.
+> *A general comment is, you would expect to see a thermal buffer effect just from the presence of water at all compared to dry sites. Your data indicate that none of the waterlogged sample locations dried out, thus removing the thermal buffer effect during mreasurement (Figure 1). Do you have a hypothesis for what would happen if they dried based on your data? For your low elevation sites, it suggests any locations drying might be really susceptible to warming.* 
 
-L160-165 – building on above comment, note both the r2 and RMSE to capture both correlation and bias. These results will be affected by a number of factors: 1) the soil moisture effect you are interested in 2) the height of observation (2m air temperatures v 5cm soil temperatures) 3) the temporal scale of obvservation (the 1-5 years of your study is different to Chelsa) 4) The spatial scale – does Chelsa reflect the actual elevation of your sites.
+We have expanded on this comment in the discussion, indicating the relation of the buffer effect with the maintenance of the precipitation regimes, and commenting the precipitation projections for the study region.
 
-L167 – “Quantify the size of the thermal buffer effect” rather than “prove the existence”. We already know it exists.
+> *Is it possible to compare/contrast sites based on sites with weaker vs. stronger groundwater inputs in your study sites? Yes there is an elevation gradient present, but do differences in source hydrology, stronger groundwater inputs explain the really pronounced buffering of some sites vs. others irrespective of elevation?* 
 
-Discussion: Where results are similar or different from other studies it would be nice to delve deeper into why. Were the observations at the same depth? E.g. We expect diurnal range to decrease with depth so studies at different depths are not necessarily comparable. What do the results tell us more generally about mires elsewhere, or where sites may vary along a moisture gradient rather than just be mire or non-mire?
+We agree with reviewer 1 in that, since we have eight sites, it is not possible to read too much on their individual character or perform any type of statistical test considering their elevation or their source hydrology. This is something that can only be pointed out in the discussion. See also the previous comment, our two bog sites are very poorly developed as bogs and receive water inputs from streams.
 
-198-208 – Don’t read too much into individual sites. When you only have 8 sites each will be unique in one way or another and we expect some results to be different. What we are interested in is trends that are consistent across all 8 sites.
+> *Your methods section is really short and does not provide extensive detail on how you performed your analysis, what statistical platform you used, elsewhere R is referenced, but not in the methods directly.*
 
+We have expanded the section to indicate the use of R and the relevant packages. When the article is accepted, the R code and the raw data will be made publicly available through GitHub. For the purpose of peer-review, we provide a link to a zip version of the GitHub repository (online submission systems generally do not allow to upload zip files). Please see the methods and the data availability section for more details.
 
-Reviewer: 2
+> *Your study might benefit from using a mixed model instead of a simple linear model. I could be convinced a more sophisticated analytical structure like linear mixed modeling (site random effect) is not needed - especially if you expect differences related to hydrology among sites, but those differences if they exist you may want to provide some justification for. If you think your sites have similar hydro-logical characteristics, then a site random effect grouping wet and dry locations by site may make sense to control for noise in the dataset from microclimate factors such as aspect etc. Please at include some justification as to why a mixed modeling approach is not needed or replace the simple linear model with a mixed model.*
 
-Comments to the Author
-Very interesting datasets. More rigor in describing how analyses were performed and digging a little deeper into the results is needed. Peatland terms vary somewhat from N. America to Europe / Eurasia. Clearly defining hydrological terms like "mire" will be useful - is this a broad term for all peatlands or simply groundwater fed ones?  You describe a groundwater buffer effect, but include wetlands in your study whose hydrology may be dominated moreso by precipitation inputs (bogs, raised bogs) . While it may not be practical to fully describe source hydrology to your sites from in situ measurements, some more information on hydrology of these wetlands would be useful. Does a gradient in groundwater connection strength exist among your sites?
+Following the comments of the previous reviewer, we have removed the linear model, and now use Pearson’s correlation. The purpose of the text is simply to check the correlation of soil measures with CHELSA values, a mixed model with random factors is not justified.
 
-A general comment is, you would expect to see a thermal buffer effect just from the presence of water at all compared to dry sites. Your data indicate that none of the waterlogged sample locations dried out, thus removing the thermal buffer effect during mreasurement (Figure 1). Do you have a hypothesis for what would happen if they dried based on your data? For your low elevation sites, it suggests any locations drying might be really susceptible to warming.  
+> *It looks as though some of the temperature variability in your dataset is due to differences in hydrology among sites. If you suspect that is the case as well, then you can pretty easily justify the existing linear model analytical structure, but need more interpretation of hydrological differences in your results and discussion.*
 
-Is it possible to compare/contrast sites based on sites with weaker vs. stronger groundwater inputs in your study sites? Yes there is an elevation gradient present, but do differences in source hydrology, stronger groundwater inputs explain the really pronounced buffering of some sites vs. others irrespective of elevation? Your methods section is really short and does not provide extensive detail on how you performed your analysis, what statistical platform you used, elsewhere R is referenced, but not in the methods directly.
+As commented above, we do not believe we can study in more detail the effect of source hydrology because of the limited number of sites, and also because all of our sites receive some groundwater input either from springs or streams.
 
-Your study might benefit from using a mixed model instead of a simple linear model. I could be convinced a more sophisticated analytical structure like linear mixed modeling (site random effect) is not needed - especially if you expect differences related to hydrology among sites, but those differences if they exist you may want to provide some justification for. If you think your sites have similar hydro-logical characteristics, then a site random effect grouping wet and dry locations by site may make sense to control for noise in the dataset from microclimate factors such as aspect etc. Please at include some justification as to why a mixed modeling approach is not needed or replace the simple linear model with a mixed model.
+> *Do any patterns emerge if you code sites by habitat type?  Please include the habitat type labels presented in Table 1 in the figure panels for Figure 1.*
 
-It looks as though some of the temperature variability in your dataset is due to differences in hydrology among sites. If you suspect that is the case as well, then you can pretty easily justify the existing linear model analytical structure, but need more interpretation of hydrological differences in your results and discussion.
+We have included the labels as suggested.
 
-Do any patterns emerge if you code sites by habitat type?  Please include the habitat type labels presented in Table 1 in the figure panels for Figure 1.
+> *Can you clarify if dry sites are in fact adjacent dry uplands or dry raised hummocks (high spots) within the wetlands? A figure with a site-level inset map would also convey this information and would benefit the paper.*
 
-Can you clarify if dry sites are in fact adjacent dry uplands or dry raised hummocks (high spots) within the wetlands? A figure with a site-level inset map would also convey this information and would benefit the paper.
+We have clarified that they are adjacent dry uplands, and also included the requested figure.
 
-It would be worth describing the >15 degree C differences between wet vs dry sites at low elevation (La Malva). That is very biologically significant! You should put that into perspective for the readers, that level of difference greatly exceeds IPCC projections for climate change in this region... Huge differences within site. Please provide some descriptive statistics on peak differences observed at some of your sites.
+> *It would be worth describing the >15 degree C differences between wet vs dry sites at low elevation (La Malva). That is very biologically significant! You should put that into perspective for the readers, that level of difference greatly exceeds IPCC projections for climate change in this region... Huge differences within site. Please provide some descriptive statistics on peak differences observed at some of your sites. This is a neat study, there seems to be some more interesting angles you can explore/present in your discussion that will make your paper more interesting to a wider array of readers.*
 
-This is a neat study, there seems to be some more interesting angles you can explore/present in your discussion that will make your paper more interesting to a wider array of readers.
+We have noted this comment about the comparison between the buffer at La Malva and the warming predictions, and also expanded the description of the special case of La Malva. We have also included a new figure (Figure 5) showing the peak differences in the eight sites during exceptionally warm days.
 
-# PDF
+## Additional comments in PDF
 
+> *The authors have collected compelling data in an understudied field. The study is relevant to biodiversity under climate change, and to assumptions of global carbon dynamics. The data collected has a lot of merit and pretty easily stands on its own without much help. However, additional descriptions of methodologies are needed. There are some interesting results here, and a nice temporal record from which to draw conclusions. The authors focus on the waterlogged nature of the soils – but the source of hydrology and how closely coupled groundwater in mires is linked with atmospheric conditions may have some bearing on whether these systems remain buffered from effects of atmospheric warming. More robust discussion on the atmospheric coupling of hydrology in these systems tied to other literature is needed. Do groundwater-fed mires persist in drying climates? The paper may benefit from discussion on changes in climate in the study region. Is this study region getting drier? What effect is that expected to have on the thermal buffer effect described? Some descriptions of the latitudinal and elevational distribution of mires in Europe from literature as well as precipitation range would be useful.  One to two paragraphs with appropriate citations will help. There are a handful of N. American papers that discuss geographic distribution of groundwater-fed mires [fens] as well. Some literature on how extensive these peatlands are in temperate and boreal landscapes would be helpful to convey the relevance of this work*.  
 
-The authors have collected compelling data in an understudied field. The study is relevant to biodiversity under climate change, and to assumptions of global carbon dynamics. The data collected has a lot of merit and pretty easily stands on its own without much help. However, additional descriptions of methodologies are needed. There are some interesting results here, and a nice temporal record from which to draw conclusions. The authors focus on the waterlogged nature of the soils – but the source of hydrology and how closely coupled groundwater in mires is linked with atmospheric conditions may have some bearing on whether these systems remain buffered from effects of atmospheric warming. More robust discussion on the atmospheric coupling of hydrology in these systems tied to other literature is needed. Do groundwater-fed mires persist in drying climates? The paper may benefit from discussion on changes in climate in the study region. Is this study region getting drier? What effect is that expected to have on the thermal buffer effect described? Some descriptions of the latitudinal and elevational distribution of mires in Europe from literature as well as precipitation range would be useful.  One to two paragraphs with appropriate citations will help. There are a handful of N. American papers that discuss geographic distribution of groundwater-fed mires [fens] as well. Some literature on how extensive these peatlands are in temperate and boreal landscapes would be helpful to convey the relevance of this work.  Some more description on differences in source hydrology to the sites studied and implications for how that may translate to strength of thermal buffer is warranted. Strictly speaking source hydrology – dominated by groundwater flows vs. hydrology dominated moreso by precipitation should have an effect on the microclimate thermal buffer. Some of the variation among sites that is unexplained by elevation may be a result of stronger vs. weaker connection to groundwater. This is an angle you really don’t address in much detail and is a potentially really important area to explore in discussion. It’s possible that wetlands in similar elevation and latitude could have markedly differing responses to climate change. i.e., stronger buffer effects at certain sites vs. others at the similar elevations – explore and describe these results further.Including a table with shift in climate trend per decade for precipitation and temperature for the study area would be informative or a citation with similar information. Some additional historical background on groundwater thermal buffer effect would improve the paper, and further support the notion that these effects have been “known” but little quantified. The authors will probably enjoy reading Clara May Frederick’s, 1974 A Natural History Study of the Vascular Flora of Cedar Bog, Champaign County, Ohio) Ohio Journal of Science who performed early temperature data collection work in such settings as far back as the 1960’s.A Ph.D. dissertation chapter by Raney (2014) Identifying Potential Refugia from Climate Change in Wetlands: High Resolution Soil Climate Maps For Priority Conservation Areas: Hydrologic Processes Mediate Significant Microclimate Variation uses very similar field data collection  methods to test the groundwater thermal buffer effect in wetlands as the authors, but focused on spatial coverage vs temporal length. That study includes 1-year worth of data. While the Raney study has not undergone 
-formal peer-review and has some limitations, the soil temperature figures and data summaries in that study may be of particular interest to the authors as additional evidence of thermal buffer due to groundwater. Line 39 – increasingly there are downscaling efforts based on atmospheric microclimate networks distributed in complex terrain that focus on topographic effects on air temperature. So to a degree microclimate factors are increasingly considered, but not hydrologic factors under edaphic/soil control. It may be a distinction worth pointing out.Lines 47-59 The term mire may vary somewhat in terms of meaning by region. Please clearly define the primary source of hydrology along with your definition of mire. This will help readers in other regions. If the authors have soil-pH or pore-water pH available for study sites that would be useful but not mandatory to include in Table 1.Line 56 – insert “across their range” after homogeneous floraLine 76 – and carbon.Line 78 – replace the word “surface” with “area”Figures: Your first figure should be a site map showing regional context, and if possible topographic gradient of your sites. Figure 1 Make all labels bold, and text larger. To reduce space, put Site name labels in the light gray plot space and reduce the resulting blank space between top and bottom panels. This figure will likely take up ½ the size when published, so labels need to be larger/darker to maintain legibility.  Also you might add to your figure caption that the amplitude of diurnal temperature range in dry sites was reduced with increasing elevation, where the thermal buffer effect was also less apparent. Any ideas why La Recoleta at higher elevation shows a really strong disparity between wet and dry locations moreso than your other high elevation sites? Do you think aspect or some other factor had an effect? May be worth exploring in your results section a little further. Line 80 – Groundwater flows are somewhat decoupled from high frequency variation in precipitation, but are still linked to lower-frequency long-term changes in precipitation, groundwater recharge and flow to some degree. Focusing some attention on this phenomenon and possibly your discussion may be useful. Just because there is an observed thermal buffer effect now does not mean it will persist indefinitely, especially if climate becomes more arid – distribution of groundwater flows supporting mires may diminish in frequency, quantity, resulting in periodic drying and even potential loss of this buffer effect. For instance, regions that are wetting and expected to become wetter based on IPCC or other projections may have more stability in the thermal buffer effect vs. drying regions. It would be beneficial to focus some of your discussion on this topic.Line 86 change representativeness to representation for simplicity.
-The materials and methods section needs to be much more robust in terms of explaining the statistical platform used to perform the analyses, the packages used, citations for those platforms and packages. Why the analyses are appropriate. There’s really not much of a description of how linear modeling was performed, assumptions etc. A linear mixed-model approach would make a lot of sense instead of a simple linear model, grouping wet and dry locations by a “Site” factor to control for latent processes. Need details on sample sizes in your methods.Lines 99-101 Also include quantitative descriptors of climate in the study area (mm precip/year min and max temp/year). Line 110 – provide sampling resolution of loggers. A description of why was 5cm depth chosen is needed. Please include a map of the study sites with an inset to show regional/continental position. Lines 123 – 133 – some discussion on why these are biologically or environmentally meaningful statistics is needed. Are species distributions controlled by winter minimums? Carbon dynamics by warm temperatures? Statistical analysis:Some simple statistics on precipitation and temperature trends over the last ~hundred years in this study region would be helpful to broaden discussion regarding future uncertainty of microclimates. That would also help to put your study into perspective / macroclimatic context. Are the elevational trends we’re seeing shown for a warming region? A simple trend analysis would be useful. Mm precipitation shift/decade and °C/decade would be useful metrics to include as well as the significance of those shifts. It is a stronger argument if you can show that there’s a thermal buffer effect detectable in a warming or drying climate. Dendrochronology literature frequently includes analytical methods for such trend analyses. Results: More interpretation of the results is needed. Line 155 If you’re only looking at wet vs dry sites, wouldn’t you expect wet sites to have less variability even if the source was not groundwater? Line 167 – Delete the word prove. The evidence required to prove something is very high. Suggest changing to: The results presented provide strong evidence of... Line 173 – Raney 2014 has similar findings from year-round data for a single year. Warmer in winter, cooler in summer. You should highlight that your findings were extended to a full year and the pattern is 
-reproducible among years out to five years. The fact that your data possess a strong-elevational relationship, i.e., stronger under warming environment is worth more attention. Line 194 – Replace “highness” with “height”Line 200 – you elude to some topographic microclimate effects on your sites. That is fine as they influence both wet and dry locations equally, but may be worth including aspect measurements for your sites in Table 1. Neat datasets, I look forward to reading the final manuscript.
+We have expanded the sentences describing the distribution of mires in Europe, North America and Russia. For the questions related to hydrology and climate change in the study region, please see the responses to similar comments.
+
+> *Some more description on differences in source hydrology to the sites studied and implications for how that may translate to strength of thermal buffer is warranted. Strictly speaking source hydrology – dominated by groundwater flows vs. hydrology dominated moreso by precipitation should have an effect on the microclimate thermal buffer. Some of the variation among sites that is unexplained by elevation may be a result of stronger vs. weaker connection to groundwater. This is an angle you really don’t address in much detail and is a potentially really important area to explore in discussion. It’s possible that wetlands in similar elevation and latitude could have markedly differing responses to climate change. i.e., stronger buffer effects at certain sites vs. others at the similar elevations – explore and describe these results further.*
+
+Please see the previous response to the issue of hydrology.
+
+> *Including a table with shift in climate trend per decade for precipitation and temperature for the study area would be informative or a citation with similar information.* 
+
+We have cited the data with the latest projections made by the national meteorology agency of Spain (AEMET).
+
+> *Some additional historical background on groundwater thermal buffer effect would improve the paper, and further support the notion that these effects have been “known” but little quantified. The authors will probably enjoy reading Clara May Frederick’s, 1974 A Natural History Study of the Vascular Flora of Cedar Bog, Champaign County, Ohio) Ohio Journal of Science who performed early temperature data collection work in such settings as far back as the 1960’s.*
+
+Thank you for this pioneering reference, we have integrated it into our manuscript.
+
+> *A Ph.D. dissertation chapter by Raney (2014) Identifying Potential Refugia from Climate Change in Wetlands: High Resolution Soil Climate Maps For Priority Conservation Areas: Hydrologic Processes Mediate Significant Microclimate Variation uses very similar field data collection  methods to test the groundwater thermal buffer effect in wetlands as the authors, but focused on spatial coverage vs temporal length. That study includes 1-year worth of data. While the Raney study has not undergone formal peer-review and has some limitations, the soil temperature figures and data summaries in that study may be of particular interest to the authors as additional evidence of thermal buffer due to groundwater.* 
+
+We have integrated this reference into our manuscript.
+
+> *Line 39 – increasingly there are downscaling efforts based on atmospheric microclimate networks distributed in complex terrain that focus on topographic effects on air temperature. So to a degree microclimate factors are increasingly considered, but not hydrologic factors under edaphic/soil control. It may be a distinction worth pointing out.*
+
+We have included this consideration.
+
+> *Lines 47-59 The term mire may vary somewhat in terms of meaning by region. Please clearly define the primary source of hydrology along with your definition of mire. This will help readers in other regions. If the authors have soil-pH or pore-water pH available for study sites that would be useful but not mandatory to include in Table 1.*
+
+We have included water pH and conductivity in the table. Please see also the response to a similar comment above.
+
+> *Line 56 – insert “across their range” after homogeneous flora.*
+
+Changed.
+
+> *Line 76 – and carbon*
+
+Changed.
+
+> *Line 78 – replace the word “surface” with “area”*
+
+Changed.
+
+> *Figures: Your first figure should be a site map showing regional context, and if possible topographic gradient of your sites.*
+
+We have created the suggested figure.
+
+> *Figure 1 Make all labels bold, and text larger. To reduce space, put Site name labels in the light gray plot space and reduce the resulting blank space between top and bottom panels. This figure will likely take up ½ the size when published, so labels need to be larger/darker to maintain legibility.  Also you might add to your figure caption that the amplitude of diurnal temperature range in dry sites was reduced with increasing elevation, where the thermal buffer effect was also less apparent.* 
+
+Changed as suggested.
+
+> *Any ideas why La Recoleta at higher elevation shows a really strong disparity between wet and dry locations moreso than your other high elevation sites? Do you think aspect or some other factor had an effect? May be worth exploring in your results section a little further.* 
+
+A possible explanation is that La Recoleta is a quaking bog (a transition from aquatic to fen vegetation at the margins of a silting glacial lake) and therefore it is more waterlogged than other sites. We have expanded this explanation. However, we agree with reviewer 1 that we should not go too far into interpreting the results of single sites.
+
+> *Line 80 – Groundwater flows are somewhat decoupled from high frequency variation in precipitation, but are still linked to lower-frequency long-term changes in precipitation, groundwater recharge and flow to some degree. Focusing some attention on this phenomenon and possibly your discussion may be useful. Just because there is an observed thermal buffer effect now does not mean it will persist indefinitely, especially if climate becomes more arid – distribution of groundwater flows supporting mires may diminish in frequency, quantity, resulting in periodic drying and even potential loss of this buffer effect. For instance, regions that are wetting and expected to become wetter based on IPCC or other projections may have more stability in the thermal buffer effect vs. drying regions. It would be beneficial to focus some of your discussion on this topic.*
+
+We have expanded the discussion in this direction, noting that the buffer effect is dependent on future changes on precipitation, and describing the latest projection for the study area (a decrease of 10 % by the end of the century).
+
+> *Line 86 change representativeness to representation for simplicity.*
+
+Changed.
+
+> *The materials and methods section needs to be much more robust in terms of explaining the statistical platform used to perform the analyses, the packages used, citations for those platforms and packages. Why the analyses are appropriate. There’s really not much of a description of how linear modeling was performed, assumptions etc. A linear mixed-model approach would make a lot of sense instead of a simple linear model, grouping wet and dry locations by a “Site” factor to control for latent processes.* 
+
+Please see a previous response to a similar comment.
+
+> *Need details on sample sizes in your methods.*
+
+We have included the sample sizes.
+
+> *Lines 99-101 Also include quantitative descriptors of climate in the study area (mm precip/year min and max temp/year).* 
+
+We have included this information.
+
+> *Line 110 – provide sampling resolution of loggers. A description of why was 5cm depth chosen is needed.* 
+
+We have included this information, and the explanation for the sampling depth.
+
+> *Please include a map of the study sites with an inset to show regional/continental position.* 
+
+We have included the map.
+
+> *Lines 123 – 133 – some discussion on why these are biologically or environmentally meaningful statistics is needed. Are species distributions controlled by winter minimums? Carbon dynamics by warm temperatures?*
+
+We have included a description of the biological meaning of the bioclimatic variables we chose, with a relevant reference for more information.
+
+> *Statistical analysis: Some simple statistics on precipitation and temperature trends over the last ~hundred years in this study region would be helpful to broaden discussion regarding future uncertainty of microclimates. That would also help to put your study into perspective / macroclimatic context. Are the elevational trends we’re seeing shown for a warming region?  A simple trend analysis would be useful. Mm precipitation shift/decade and °C/decade would be useful metrics to include as well as the significance of those shifts. It is a stronger argument if you can show that there’s a thermal buffer effect detectable in a warming or drying climate. Dendrochronology literature frequently includes analytical methods for such trend analyses. *
+
+We are sorry but we do not have access to the data necessary to make such analysis, since analysing the evolution of climate in the study region was not the goal of this project.
+
+> *Results: More interpretation of the results is needed. Line 155 If you’re only looking at wet vs dry sites, wouldn’t you expect wet sites to have less variability even if the source was not groundwater?* 
+
+We interpret the results in the discussion, and comment the generality of the moisture effect.
+
+> *Line 167 – Delete the word prove. The evidence required to prove something is very high. Suggest changing to: The results presented provide strong evidence of...* 
+
+Changed.
+
+> *Line 173 – Raney 2014 has similar findings from year-round data for a single year. Warmer in winter, cooler in summer. You should highlight that your findings were extended to a full year and the pattern is reproducible among years out to five years. The fact that your data possess a strong-elevational relationship, i.e., stronger under warming environment is worth more attention.* 
+
+We have added these considerations.
+
+> *Line 194 – Replace “highness” with “height”*
+
+Changed.
+
+> *Line 200 – you elude to some topographic microclimate effects on your sites. That is fine as they influence both wet and dry locations equally, but may be worth including aspect measurements for your sites in Table 1. Neat datasets, I look forward to reading the final manuscript.*
+
+Only one of the sites (La Malva) is in a slope and thus has an aspect, the other sites are flat. We have changed the sentence to make this clear. 
