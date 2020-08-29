@@ -1,5 +1,5 @@
 ---
-title: "Ref. GEB-2020-0155 - Response to reviewers"
+title: "Ref. JOC-20-0599 - Response to reviewers"
 author: "Eduardo Fernández Pascual & Eva Correia-Álvarez"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output: html_document
@@ -9,202 +9,122 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Please, find below my revision of the manuscript. I have considered and applied all suggestions. Considering the major issues, I have (1) expanded the explanation of the chosen biome and the creation of the species list; (2) clarified the missing full texts issue, providing a more detailed description, a PRISMA flow chart, and BibTeX files with the missing references; and (3) expanded the database to include the controlling factors required by the reviewers, such as substrate and number of containers.
-
 # Response to the Editor
 
-> I recommend that the manuscript be rejected with an opportunity to resubmit. The reviewers and myself agreed that the premise of the study was very interesting and relevant to the journal's audience, and appreciate the extensive work that went into its creation. However, a number of issues were identified, which I think preclude publication in present form, and whose resolution would potentially require extensive work on the part of the authors.
+# Response to Referee 1
 
-> First, the database's content and scope seems broader than warranted by its contents. The first reviewer and I both agree that the data do not necessarily provide full coverage of the proposed biome, and may contain species from beyond it. Additionally, I note that all of the sPlot records used to create a species list are from the Northern hemisphere, when the temperatre / broadleaf forest biome occurs widely in the southern hemisphere. While some of the identified studies end up sourcing data from southern hemisphere sites, it seems inaccurate and overly ambitious to suggest the dataset cover this biome. I am not sure that database with only northern hemisphere coverage of one biome, and with strong biases towards the species and sites represented in sPlot, would be of sufficient interest to receive support in the journal. I encourage the authors to expand the scope of their study, or alternatively provide a robust justification for the current scope, and a clearer title / narrative concomitant with the data.
+# Response to Referee 2
 
-The editor is right that the biome is also found in the southern hemisphere, although the extension there is smaller than in the northern hemisphere. In the new version of the manuscript, there is a longer explanation of why the NH biome was chosen, and how the species were selected. Summarising, the temperate broadleaf and mixed forests of the Northern Hemisphere were chosen as the subject of a sPlot project. Only the NH was chosen because it forms a coherent biogeographical unit, since it shared a common history during the Tertiary. The SH forests, on the other hand, are separated (and smaller) units and were not connected to the northern forests. This database was created for that specific sPlot project, and it was decided to do so because we expected that the number of germination references would be the highest, since many classical research groups have worked within the NH temperate broadleaf and mixed forests biome. This is developed in more detail in the manuscript and in the response to the reviewers.
+Dear Dr Fernández-Pascual
 
-In addition, the title has been changed to *Sylvan Seeds, a database and web app to explore the seed germination ecology of temperate broadleaf and mixed forests of the northern hemisphere*.
+We recognise that the impact of the COVID-19 pandemic may affect your ability to return your revised manuscript to us within the requested timeframe. If this is the case, please let us know.
 
-In any case, and in my personal view, I believe this is the more complete database of raw germination data for a coherent ecological unit and, spanning three continents of a densely populated and significant biome, it has enough global interest for the journal.
+Manuscript # JOC-20-0599 entitled "Mire microclimate: groundwater buffers temperature in waterlogged versus dry soils" which you submitted to the International Journal of Climatology, has been reviewed.  The comments of the referee(s), all of whom are leading international experts in this field, are included with this letter.
 
-> Reviewer #1 also notes that 1/3 of the considered studies were omitted due to access issues; I suggest the authors try to resolve this point, or robustly clarify the justification for this choice. As the manuscript stands currently this text is not very convincing for a reader.
+The reviewers believe that the paper has potential to be published in the International Journal of Climatology, but major revisions are required. Revisions in this category may involve substantial text changes, recalculations or new analyses in addition to more minor clarifications and corrections.  In your revisions, please address all of the points made by each reviewer, amend the manuscript accordingly, and include a point-by-point response to each reviewer comment with your response.
 
-Please see the response to the reviewers about this point.
+Both reviewers found this to be an interesting study. There is room to expand on your results/discussion as highlighted by both reviewers to improve upon the rigor and impact of this work.
 
-> Second, the first reviewer identified several issues related to the methodology used for the meta-analysis and literature search. I am sympathetic to these points and suggest the authors revisit their search criteria and data, or provide a robust response to these criticisms.
+One upshot of the study is that mire regions might be climate refugia. Figure 3 gets at this point for summer Tmax spatially. I wonder if one can also show how soil temperatures may vary at paired sites during exceptionally warm daily temperatures during the warm season (e.g., complementary temporal analysis).
 
-Please see the response to the reviewers about this point.
+Because the manuscript needs major revisions, I will send the revised manuscript and your responses back to some or all of the reviewers for further review. Please note that submitting a revision of your manuscript does not guarantee eventual acceptance. I would like to receive the revised manuscript as soon as is convenient, but by 24-Nov-2020 at the latest.
 
-> As such, I do not think the data paper is ready to be accepted in present form, but am very willing to consider a thoroughly revised version.
+This should be sufficient time given the nature of the revisions, but please communicate with me via email if you need an extension of the deadline.
 
-# Responde to Referee 1
+If the reviewers have suggested that the language of the current version of your manuscript does not allow a thorough evaluation, we recommend that you have your paper professionally edited for English language by a service such as Wiley’s at http://wileyeditingservices.com. Please note that while this service will greatly improve the readability of your paper, it does not guarantee acceptance of your paper by the journal.
 
-> The manuscript describes a dataset of species germination rates where the species were selected based on the sPlot species lists for temperate biomes. The shiny app is a nice addition that could be of use to the broader public with proper dissemination. It is interesting data to compile that will surely be valuable, but the scope of the biomes investigated and a lack of important methodological detail from the germination experiments limits the utility of the data. These concerns and a few others are detailed below. 
+Once again, thank you for submitting your manuscript to the International Journal of Climatology and I look forward to  receiving your revision.
 
-> I wonder if defining the biome as “temperate broadleaf and mixed forests” is appropriate. There appears to be a number of species that generally occur in grasslands and biomes/habitats outside of forests (e.g. Dactylis glomerata, Achillea millifolium, Festuca ovina, etc.). Did each paper specify that the populations of seed collection were forested? If not, I recommend using something like a Whittaker biome diagram to describe the biomes as temperate rain, deciduous and dry forests, and grass/shrublands. Or just add additional biomes from the WWF classifications.
 
-The new version of the manuscript contains a more detailed explanation of the reason to select the biome, and of the methodology used to construct the list of species. Please see the response to the editor and the manuscript for more comments on this.
+Sincerely,
 
-The TBMF biome (in the northern hemisphere) is the area which was used to create the list of frequent species, for which the database was then compiled.  Biomes are defined as *relatively large units of land containing a distinct assemblage of natural communities and species, with boundaries that approximate the original extent of natural communities prior to major land-use change*. Thus, the TBMF biome does not contain only forests, but many other habitats such as heathlands, meadows, alpine grasslands, mires, dunes, etc. However, the plots used to create the list were filtered to be only forested plots (i.e., they were selected when they met the criterion that tree species dominated their plant cover). The list that has been produced includes species that occur with high frequency in forested plots of the TBMF biome in the nothern hemisphere. These are trees, shrubs, and herbaceous understory plants adapted to shade. But also species of forest margins, openings, riparian forests, ruderalized forests, etc.
+Dr John Abatzoglou
+Associate Editor, International Journal of Climatology
+jabatzoglou@ucmerced.edu
 
-The species mentioned by the reviewer are indeed species of the TBMF biome, and, even if today they may have their optimum in semi-natural meadows and pastures, they can occur also in forested plots (and in fact they do, as sown by the vegetation relevés we used). *Dactylis glomerata* and *Achillea millifolium* are species of mesic meadows (*Molinio-Arrhenatheretea*), which are secondary communities developped by human intervention over habitats that would be naturally occupied by temperate forests. The traditional interpretation of the origin of these communities is that they originated in forest margin communities that colonized the openings created by humans. Therefore, it is not surprising that these species are recorded with relative frequency in forest plots, as indeed they are. Similarly, it is not surprising that dry grassland (*Festuco-Brometea*) species such as *Festuca ovina* are also recorded in forest plots, especially in contact areas, as these are also communities that expanded over landscapes that would naturally be forests.
+***************************************************************************
+Instructions for submitting your revised manuscript:
 
-I agree that the seed lot coordinates that are provided with the database could be used to construct a Whittaker diagram of the seed lots, or alternatively to asign them to WWF biomes. But I feel that this is more of an analytical usage of the data, which can be done by any user with the information provided in the dataset. Still, I am willing to do such tasks if the editor finds them essential.
+To submit your revised manuscript, log on to http://mc.manuscriptcentral.com/joc and click on ‘Author Centre’. Click the link in the ‘Manuscripts with Decisions’ list. Click on the ‘create a revision’ link for the appropriate manuscript.
 
-> The justification for restricting the search to certain biomes and species is weak (Lines 49-50), especially given sPlot is a global database. If picking these biomes covers most of the available data, why not extend beyond this biome given the added work is relatively minimal? Then the dataset would be truly global. There are a lot of papers on germination outside of this biome that could make for valuable comparisons (e.g., tundra/alpine biomes from Vandvik et al. 2017. Botany 95:73-88; Tropical forests from Yu et al. 2008. Plant Ecology 297:1-16). Why not expand the search to all species within sPlot? If the search is expanded to all species in sPlot, does the number of articles requiring processing become unreasonable? This would make for a better justification for restricting the search. 
+Please note:
+-Once you begin to submit the revision, the 'create a revision' link disappears and the manuscript moves into your Revised Manuscripts in Drafts list. The option reappears if you delete the revision before it is actually submitted.
 
-I have included a more detailed description of the reasons behind chosing the TBMF biome to construct the database: *The building of the dataset was part of a research project conducted within the sPlot initiative (Bruelheide et al., 2019), specifically sPlot’s project #12 (https://www.idiv.de/en/sdiv/working_groups/wg_pool/splot/projects.html). The goal of sPlot #12 was to study taxonomical and functional plant diversity in deciduous forests, which are dominant in temperate latitudes with mild to cold winters and relatively warm and wet summers. In the northern hemisphere, they also form a coherent evolutionary and biogeographic unit, sharing a common Tertiary history until they became separated between North America, Asia and Europe (Milne & Abbott, 2002).*
+Should a revised manuscript be accepted, the files will be sent electronically to the Production Department. It is thus very important that the files uploaded at revision are in their final format and of sufficient quality for publication. At revision, you should provide:
+a) The manuscript text in Word format (all tracked changes removed). This file should be text only, should not contain figures and must not exceed 1MB in size. Tables must not be embedded, but provided in editable format.
+b) Figures as high-resolution TIFF, EPS or PDF files; colour in CMYK format.
+c) Supporting Information files as required. Please note that the maximum file size for each Supporting Information file is 20 MB.
+d) A copy of the text file with changes highlighted.
+e) A letter of response to the reviewers' comments, detailing point-by-point the changes made and giving reasons for those not made.
 
-Completing the database for all the species in sPlot is a worthwhile long-term goal (as mentioned in the *Utility of the database* section of the manuscript), and one that I am interested in contributing to in the future. But it was completely beyond the resources I had to construct this database, which depended on a 2-year personal grant. It took me 9 months of focused work to build a database for 1,393 species. There are 54,519 species in sPlot 2.1 (*Bruelheide, H., Dengler, J., Jiménez‐Alfaro, B., Purschke, O., Hennekens, S. M., Chytrý, M., ... & Aubin, I. (2019). sPlot–A new tool for global vegetation analyses. Journal of Vegetation Science, 30(2), 161-186*). Therefore, a rough estimate is that it would take me 29 years of work to do a database for all sPlot species! Even if the time would probably be shorter (because I do expect the number of references would be lower outside the TBMF biome), the number of references would be expanding each year with new research. So, because one has to start somewhere, I chose to do it in connection to sPlot project 12, which focused on temperate broadleaf and mixed forests of the northern hemisphere; and I chose to do it because this biome has received much attention in seed research. 
+Revised manuscripts must be in their final form when submitted. The proofs received later are for correction of typographical errors only. They should not be used for final changes to articles; such changes must be made to the manuscript before it goes to Production
 
-> The literature search would benefit from more description and/or investigation. What made a full text impossible to access? Not having access to a few full texts is understandable, but 236 would make up more than 1/3 of the 611 that were to be relevant. This data could be very important to the completeness of the dataset. Using PRISMA guidelines for proper meta-analysis data gather is highly recommended (http://www.prisma-statement.org).
+***************************************************************************
 
-Just to be precise, the proportion of not-found information is actually smaller. Of 1489 references for which I searched for the full text, I found 1253 (NOTE: While doing the revisions, I have found and corrected small discrepancies in the numbers of references, caused because a few of the records were removed by a mismatch during taxon name standardization). Of these, 639 (51%) were not relevant. If we assume the same proportion of relevant references in the cases for which I could not find the full text, we can estimate that there were 116 relevant articles which I could not include in the database: 16% of the potentially relevant references (614 found + 116 estimated not found = 730; 116/730 =  0.16). Furthermore, I must note that information is not homogenesouly distributed thorough the references: there are many references for some popular species, and fewer references for rarer species. Therefore the amount of valuable information does not increase linearly with increasing number of references, and it is very likely that a large proportion of that 16% is made up of references considering species which are already in the database. In conclusion, I believe that the amount of missing information is within reasonable limits. 
+Due Date of Revised Submission: 24-Nov-2020
 
-Be that as it may, I have improved the description of data gathering in the text, including a description of the process of finding full texts: *An effort was made to access the full text of all these references, using in order the following channels: (i) “Find Full Text” functionality in EndNote X9, (ii) online access to the journals using the institutional subscriptions of the University of Oviedo; (iiI) request to the authors through ResearchGate; (iv) general search of pdf files in Google using the article details. Unfortunately, 236 references could not be accessed. Most of these belonged to smaller publishers not included in the subscriptions of the University of Oviedo, and to older journal volumes which had not been digitalised.*
+***************************************************************************
 
-I have also included some supplementary materials to describe the data gathering: the boolean search string I used in the Web of Science, and a PRISMA flow chart. 
 
-Additionally, I have added the lists of the three types of references (non-relevant, found and not-found) as BibTeX supplementary files. In this way, it will be possible to check what I did, and to complete it in the future by accessing the references that I could not find.
 
-> There appears to be a lot of important information missing in the dataset that would allow a user of the dataset to control for methodological artifacts or biases. For example: what kind of substrate were the seeds germinated in (Agar? Soil? Sand?)? What was the density of seeds sown? How large were the containers holding the seeds? How many replicates were there to determine the number germinated versus germinable? Were any treatments, such as drought or nutrient addition, used in the experiment? Were the seeds sown in a monoculture?
+Referee(s)' Comments to Author:
 
-As requested, I have revised the references to retrieve the requested information, and added it to the database: type of substrate; type and dimensions of the containers; number of containers and number of seeds sown per container; treatments of sterilization and nutrients. Density of seeds is not reported in the references, but it can be estimated from the dimension of the containers and the number of seeds sown. All cases included in the database correspond to monoculture experiments, and special treatments (drought, heavy meatals, smoke, etc.) were not included; this is now stated in the text. Please see the manuscript for the description of the new variables in the database. 
+Reviewer: 1
 
-> Most of the studies would have replicated germination trials (e.g. sown 100 seeds across 5 replicates: 20 seeds per replicate). Therefore, there is likely true error estimates (and mean percent germination) that can be obtained from the papers. These are a highly desirable metrics from the papers and would improve the error estimates in the shiny app as well.
+Comments to the Author
+This is a short and simple study comparing 5cm soil temperatures in mire habitats with adjacent drier microhabitats. It could be of interest to some readers, although it could use some polish and set in a broader context.
 
-As requested, I have included the number of containers ("replicates") and number of seeds sown per replicate in the database.
 
-> Line 12- add an “and” so that it reads “darkness, and constant or alternating”
+Specific comments:
 
-Done.
+L15 – I think a yes/no type hypothesis about climate variability is not very interesting given we already have a priori expectations in this regard (e.g. L61-65, Ashcroft & Gollan 2013 Agric. For. Meteorol. 176:77-89. I would focus more on a quantitative question like: how different are they? What are you finding that is different from what we already know?
 
-> Line 16- Will the data collection be continuous? Maybe assign a final year here.
+L25 – What do you mean by failed to predict? E.g. r2 < 0.5? RMSE > 2oC? Spatial pattern wrong? Consistent bias?
 
-Done.
+L42 – “has been”
 
-> Line 31- add an of; “all of these”
+L88-94: Like L15 above, we already have strong evidence that soil moisture acts as a buffer, so testing yes/no hypothesis about this make the research more trivial that it could be. I would focus more on how different they are etc.
 
-Done.
+L142 – significantly? P<0.05?
 
-> Line 35- use commas instead of –
+L155 – This is more like a results section with actual figures. Would be good to see 95% CI for the effect sizes. i.e. instead of just effect size = -2.29oC, you would give a range like -1.5 to -3.0.
 
-Done.
+Fig. 3 – Make the scales on the y and x axes the same and add a 1:1 line. R2 tells you the correlation between soil and air temps but not the bias. You could have a high r2 and still have a high RMSE indicating poor predictions.
 
-> Line 39-40- “which implies a set of derived complications in the analytical treatment of the data”- unclear what this means and how it applies to germination as a number of successes given seeds sown (trials).
+L160-165 – building on above comment, note both the r2 and RMSE to capture both correlation and bias. These results will be affected by a number of factors: 1) the soil moisture effect you are interested in 2) the height of observation (2m air temperatures v 5cm soil temperatures) 3) the temporal scale of obvservation (the 1-5 years of your study is different to Chelsa) 4) The spatial scale – does Chelsa reflect the actual elevation of your sites.
 
-I have removed the whole sentence.
+L167 – “Quantify the size of the thermal buffer effect” rather than “prove the existence”. We already know it exists.
 
-> Line 45- Rather than “at this and that temperature”, try “across a temperature gradient”?
+Discussion: Where results are similar or different from other studies it would be nice to delve deeper into why. Were the observations at the same depth? E.g. We expect diurnal range to decrease with depth so studies at different depths are not necessarily comparable. What do the results tell us more generally about mires elsewhere, or where sites may vary along a moisture gradient rather than just be mire or non-mire?
 
-Done.
+198-208 – Don’t read too much into individual sites. When you only have 8 sites each will be unique in one way or another and we expect some results to be different. What we are interested in is trends that are consistent across all 8 sites.
 
-> Line 95- give a brief explanation of GA3
 
-Done.
+Reviewer: 2
 
-> Line 104-105- Remove highlight of Fig. 1.
+Comments to the Author
+Very interesting datasets. More rigor in describing how analyses were performed and digging a little deeper into the results is needed. Peatland terms vary somewhat from N. America to Europe / Eurasia. Clearly defining hydrological terms like "mire" will be useful - is this a broad term for all peatlands or simply groundwater fed ones?  You describe a groundwater buffer effect, but include wetlands in your study whose hydrology may be dominated moreso by precipitation inputs (bogs, raised bogs) . While it may not be practical to fully describe source hydrology to your sites from in situ measurements, some more information on hydrology of these wetlands would be useful. Does a gradient in groundwater connection strength exist among your sites?
 
-Done.
+A general comment is, you would expect to see a thermal buffer effect just from the presence of water at all compared to dry sites. Your data indicate that none of the waterlogged sample locations dried out, thus removing the thermal buffer effect during mreasurement (Figure 1). Do you have a hypothesis for what would happen if they dried based on your data? For your low elevation sites, it suggests any locations drying might be really susceptible to warming.  
 
-> Line 108- incorrect degree symbol. 
+Is it possible to compare/contrast sites based on sites with weaker vs. stronger groundwater inputs in your study sites? Yes there is an elevation gradient present, but do differences in source hydrology, stronger groundwater inputs explain the really pronounced buffering of some sites vs. others irrespective of elevation? Your methods section is really short and does not provide extensive detail on how you performed your analysis, what statistical platform you used, elsewhere R is referenced, but not in the methods directly.
 
-It was the degree symbol rendered in the Calibri font, the new manuscript is in Arial.
+Your study might benefit from using a mixed model instead of a simple linear model. I could be convinced a more sophisticated analytical structure like linear mixed modeling (site random effect) is not needed - especially if you expect differences related to hydrology among sites, but those differences if they exist you may want to provide some justification for. If you think your sites have similar hydro-logical characteristics, then a site random effect grouping wet and dry locations by site may make sense to control for noise in the dataset from microclimate factors such as aspect etc. Please at include some justification as to why a mixed modeling approach is not needed or replace the simple linear model with a mixed model.
 
-> Line 154- remove the “a” to read “can have wide applicability”
+It looks as though some of the temperature variability in your dataset is due to differences in hydrology among sites. If you suspect that is the case as well, then you can pretty easily justify the existing linear model analytical structure, but need more interpretation of hydrological differences in your results and discussion.
 
-Done.
+Do any patterns emerge if you code sites by habitat type?  Please include the habitat type labels presented in Table 1 in the figure panels for Figure 1.
 
-> Line 155-157- Try “The data can extend current trends in global analyses of plant traits at species (Diaz et al., 2016) and community levels (Bruelheide t al., 2018) to seed germination.”
+Can you clarify if dry sites are in fact adjacent dry uplands or dry raised hummocks (high spots) within the wetlands? A figure with a site-level inset map would also convey this information and would benefit the paper.
 
-Done.
+It would be worth describing the >15 degree C differences between wet vs dry sites at low elevation (La Malva). That is very biologically significant! You should put that into perspective for the readers, that level of difference greatly exceeds IPCC projections for climate change in this region... Huge differences within site. Please provide some descriptive statistics on peak differences observed at some of your sites.
 
-> Line 160- Remove “to”
+This is a neat study, there seems to be some more interesting angles you can explore/present in your discussion that will make your paper more interesting to a wider array of readers.
 
-Done.
+# PDF
 
-> Line 262- As the authors note, the references will need cleaning.
 
-Indeed.
-
-> Can the species names be searchable in addition to the drop-down menu in the shiny app?
-
-The species name can be deleted, and then one can write in the box. This will trigger an autocomplete, which will allow to search.
-
-> There are special character errors in the “Reference” column of the dataset: e.g., «ali?kan, O., et al. (2012). "Influences of presowing treatments on the germination and emergence of fig seeds (Ficus carica L.)." Acta Scientiarum. Agronomy 34(3): 293-297.
-
-This should be fixed now.
-
-# Responde to Referee 2
-
-> This data paper introduces a new resource available to ecologists: a data base and associated app summarising seed germination data for a large number of plant species in the temperate broadleaf/mixed forest biome. The authors used an extensive literature search to identify sources of germination data, and have gone through a substantial effort in extracting data from a large number of published articles. The resulting ‘Sylvan Seeds’ data base and app has the potential to be a valuable tool for researchers and applied foresters. I had a quick play around with the app – it provides nice species-specific data summaries (although I think the data base itself is going to be a more useful resource).
-
-> I have little to criticise in terms of the approaches used (which seem sound), but believe that the presentation would benefit from a few changes to make it more reader friendly and accessible for people whose main interest might not be in seed ecology and to potential non-academic users of the database/app:
-
-> L1 (Title): I am not sure how many people will immediately know what a ‘shiny app’ is. (I did not...) Could another more general term be used?
-
-I changed it to *web app*.
-
-> L5 (Motivation): This section could perhaps start with a sentence on why seed germination is an important phenomenon in ecology?
-
-Done.
-
-> L9-10: “Data has been gathered using a meta-analytical approach to search the literature.” Meta-analytical approach may suggest that some kind of data analysis was involved. Could be changed to something along the lines of “Data were gathered using a systematic literature search approach” or similar. (Later in the text you could then mention that the exact approach taken was inspired by approaches typically used in meta-analyses?) 
-
-Changed as suggested.
-
-> L14: “across the biome and beyond” – unclear meaning
-
-Changed to *Seed lots collected throughout the biome and in neighbouring areas*.
-
-> L16: today -> March 2019?
-
-Changed to the year of the most recent seed lot, 2017.
-
-> L17: frequent -> common?
-
-I believe it is more appropiate to use frequent, as frequency is the common term in plant ecology: *Frequency is the number of times a plant species occurs in a given number of quadrats*. Frequency, thus defined, was the criterion used to include species in the search.
-
-> L20: wide -> wider?
-
-Changed.
-
-> L25: Again, considering the broad readership of Global Ecology and Biogeography, it might be helpful to start with a sentence or two on the importance of studying seed traits/germination/seed ecology (and – given the journal – ideally also something on why a global approach can contribute to the field of seed ecology). 
-
-Done.
-
-> L41: scarcity of -> lack of? (Alternatively, if such data bases exist, but there are only few of them, stick to original wording but mention which ones exist.)
-
-Changed to *lack of*.
-
-> L45: at this and that temperature -> at various temperatures
-
-Changed to *accross a temperature gradient* as suggested by referee 1.
-
-> L49-50: home of many of the classical research groups in seed ecology -> research focus of (…) or similar?
-
-Changed to *At the same time, a relatively high number of classic seed biology research groups have worked within the TBMFNH areas, e.g. in the USA (Baskin, 1995), the UK (Grime et al., 1981), Belgium (Van Assche & Vandelook, 2006) and Japan (Washitani, 1988). *.
-
-> L51: see previous comment regarding reference to meta-analysis
-
-Changed to *To gather data for the project, a systematic literature search (Koricheva et al., 2013) was applied to a list of frequent species representing the flora of the TBMFNH.*
-
-> L57: not all readers might be familiar with the term vegetation relevé -> provide brief explanation?
-
-The following explanation has been added: *(i.e. records of plant species co-occurring in a sampling plot)*
-
-> L58: the reference to sPlot’s project #12 might not mean much to people not involved with sPlot. -> Provide link to website or further explanation?
-
-I have included the following description: *The building of the dataset was part of a research project conducted within the sPlot initiative (Bruelheide et al., 2019), specifically sPlot’s project #12 (https://www.idiv.de/en/sdiv/working_groups/wg_pool/splot/projects.html). The goal of sPlot #12 was to study taxonomical and functional plant diversity in deciduous forests, which are dominant in temperate latitudes with mild to cold winters and relatively warm and wet summers. In the northern hemisphere, they also form a coherent evolutionary and biogeographic unit, sharing a common Tertiary history until they became separated between North America, Asia and Europe (Milne & Abbott, 2002).*. Unfortunately, no articles derived from sPlot #12 have been finished so far, so I cannot cite them, which would be the ideal solution.
-
-> L72: ‘To obtain a final list of species (…)’. The primary reason for focusing on the subset of species that were present in a minimum of 5% of the relevés of an ecoregion was presumably to make the work achievable given the large number of species (>7000) in the full species pool?
-
-There was the practical reason mentioned by the reviewer, but also a methodological consideration. I have added the following explanation: *There were two reasons to use this frequency threshold: (i) it made the search achievable with the resources available; and (ii) it filtered out rare species that may not be representative of TBMFNH, and which could have been recorded for a variety of reasons (wrong taxonomical identifications, mistakes in plot coordinates, border areas, unnatural areas such as parks, etc.).*  
-
-> L81-82: “(…) for 236 it was impossible to access the full text.” Unclear meaning: Was this because of lack of institutional licenses for accessing journals, or because of something else?
-
-Please see the response to referee 1 about the same question. The causes are now described as follows: *An effort was made to access the full text of all these references, using in order the following channels: (i) “Find Full Text” functionality in EndNote X9, (ii) online access to the journals using the institutional subscriptions of the University of Oviedo; (iiI) request to the authors through ResearchGate; (iv) general search of pdf files in Google using the article details. Unfortunately, 236 references could not be accessed. Most of these belonged to smaller publishers not included in the subscriptions of the University of Oviedo, and to older journal volumes which had not been digitalised.*.
-
-> L95: GA3 -> gibberellic acid (to help readers who are less familiar with the topic, could perhaps also mention that GA3 speeds up seed germination)
-
-Done.
-
-> L96: the term ‘response variable’ suggests that you conducted some kind of statistical analysis. -> Delete term or change wording.
-
-Removed *the response variable* part of the sentence.
+The authors have collected compelling data in an understudied field. The study is relevant to biodiversity under climate change, and to assumptions of global carbon dynamics. The data collected has a lot of merit and pretty easily stands on its own without much help. However, additional descriptions of methodologies are needed. There are some interesting results here, and a nice temporal record from which to draw conclusions. The authors focus on the waterlogged nature of the soils – but the source of hydrology and how closely coupled groundwater in mires is linked with atmospheric conditions may have some bearing on whether these systems remain buffered from effects of atmospheric warming. More robust discussion on the atmospheric coupling of hydrology in these systems tied to other literature is needed. Do groundwater-fed mires persist in drying climates? The paper may benefit from discussion on changes in climate in the study region. Is this study region getting drier? What effect is that expected to have on the thermal buffer effect described? Some descriptions of the latitudinal and elevational distribution of mires in Europe from literature as well as precipitation range would be useful.  One to two paragraphs with appropriate citations will help. There are a handful of N. American papers that discuss geographic distribution of groundwater-fed mires [fens] as well. Some literature on how extensive these peatlands are in temperate and boreal landscapes would be helpful to convey the relevance of this work.  Some more description on differences in source hydrology to the sites studied and implications for how that may translate to strength of thermal buffer is warranted. Strictly speaking source hydrology – dominated by groundwater flows vs. hydrology dominated moreso by precipitation should have an effect on the microclimate thermal buffer. Some of the variation among sites that is unexplained by elevation may be a result of stronger vs. weaker connection to groundwater. This is an angle you really don’t address in much detail and is a potentially really important area to explore in discussion. It’s possible that wetlands in similar elevation and latitude could have markedly differing responses to climate change. i.e., stronger buffer effects at certain sites vs. others at the similar elevations – explore and describe these results further.Including a table with shift in climate trend per decade for precipitation and temperature for the study area would be informative or a citation with similar information. Some additional historical background on groundwater thermal buffer effect would improve the paper, and further support the notion that these effects have been “known” but little quantified. The authors will probably enjoy reading Clara May Frederick’s, 1974 A Natural History Study of the Vascular Flora of Cedar Bog, Champaign County, Ohio) Ohio Journal of Science who performed early temperature data collection work in such settings as far back as the 1960’s.A Ph.D. dissertation chapter by Raney (2014) Identifying Potential Refugia from Climate Change in Wetlands: High Resolution Soil Climate Maps For Priority Conservation Areas: Hydrologic Processes Mediate Significant Microclimate Variation uses very similar field data collection  methods to test the groundwater thermal buffer effect in wetlands as the authors, but focused on spatial coverage vs temporal length. That study includes 1-year worth of data. While the Raney study has not undergone 
+formal peer-review and has some limitations, the soil temperature figures and data summaries in that study may be of particular interest to the authors as additional evidence of thermal buffer due to groundwater. Line 39 – increasingly there are downscaling efforts based on atmospheric microclimate networks distributed in complex terrain that focus on topographic effects on air temperature. So to a degree microclimate factors are increasingly considered, but not hydrologic factors under edaphic/soil control. It may be a distinction worth pointing out.Lines 47-59 The term mire may vary somewhat in terms of meaning by region. Please clearly define the primary source of hydrology along with your definition of mire. This will help readers in other regions. If the authors have soil-pH or pore-water pH available for study sites that would be useful but not mandatory to include in Table 1.Line 56 – insert “across their range” after homogeneous floraLine 76 – and carbon.Line 78 – replace the word “surface” with “area”Figures: Your first figure should be a site map showing regional context, and if possible topographic gradient of your sites. Figure 1 Make all labels bold, and text larger. To reduce space, put Site name labels in the light gray plot space and reduce the resulting blank space between top and bottom panels. This figure will likely take up ½ the size when published, so labels need to be larger/darker to maintain legibility.  Also you might add to your figure caption that the amplitude of diurnal temperature range in dry sites was reduced with increasing elevation, where the thermal buffer effect was also less apparent. Any ideas why La Recoleta at higher elevation shows a really strong disparity between wet and dry locations moreso than your other high elevation sites? Do you think aspect or some other factor had an effect? May be worth exploring in your results section a little further. Line 80 – Groundwater flows are somewhat decoupled from high frequency variation in precipitation, but are still linked to lower-frequency long-term changes in precipitation, groundwater recharge and flow to some degree. Focusing some attention on this phenomenon and possibly your discussion may be useful. Just because there is an observed thermal buffer effect now does not mean it will persist indefinitely, especially if climate becomes more arid – distribution of groundwater flows supporting mires may diminish in frequency, quantity, resulting in periodic drying and even potential loss of this buffer effect. For instance, regions that are wetting and expected to become wetter based on IPCC or other projections may have more stability in the thermal buffer effect vs. drying regions. It would be beneficial to focus some of your discussion on this topic.Line 86 change representativeness to representation for simplicity.
+The materials and methods section needs to be much more robust in terms of explaining the statistical platform used to perform the analyses, the packages used, citations for those platforms and packages. Why the analyses are appropriate. There’s really not much of a description of how linear modeling was performed, assumptions etc. A linear mixed-model approach would make a lot of sense instead of a simple linear model, grouping wet and dry locations by a “Site” factor to control for latent processes. Need details on sample sizes in your methods.Lines 99-101 Also include quantitative descriptors of climate in the study area (mm precip/year min and max temp/year). Line 110 – provide sampling resolution of loggers. A description of why was 5cm depth chosen is needed. Please include a map of the study sites with an inset to show regional/continental position. Lines 123 – 133 – some discussion on why these are biologically or environmentally meaningful statistics is needed. Are species distributions controlled by winter minimums? Carbon dynamics by warm temperatures? Statistical analysis:Some simple statistics on precipitation and temperature trends over the last ~hundred years in this study region would be helpful to broaden discussion regarding future uncertainty of microclimates. That would also help to put your study into perspective / macroclimatic context. Are the elevational trends we’re seeing shown for a warming region? A simple trend analysis would be useful. Mm precipitation shift/decade and °C/decade would be useful metrics to include as well as the significance of those shifts. It is a stronger argument if you can show that there’s a thermal buffer effect detectable in a warming or drying climate. Dendrochronology literature frequently includes analytical methods for such trend analyses. Results: More interpretation of the results is needed. Line 155 If you’re only looking at wet vs dry sites, wouldn’t you expect wet sites to have less variability even if the source was not groundwater? Line 167 – Delete the word prove. The evidence required to prove something is very high. Suggest changing to: The results presented provide strong evidence of... Line 173 – Raney 2014 has similar findings from year-round data for a single year. Warmer in winter, cooler in summer. You should highlight that your findings were extended to a full year and the pattern is 
+reproducible among years out to five years. The fact that your data possess a strong-elevational relationship, i.e., stronger under warming environment is worth more attention. Line 194 – Replace “highness” with “height”Line 200 – you elude to some topographic microclimate effects on your sites. That is fine as they influence both wet and dry locations equally, but may be worth including aspect measurements for your sites in Table 1. Neat datasets, I look forward to reading the final manuscript.
