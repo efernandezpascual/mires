@@ -1,7 +1,7 @@
 README.md
 ================
 
-![Alkaline fen in the Cantabrian Mountains](data/Sierra%20Cebolleda.jpg)
+![Alkaline fen in the Cantabrian Mountains](data/Sierra%20Cebolleda.JPG)
 
 # Mire microclimate: groundwater buffers temperature in waterlogged versus dry soils
 
