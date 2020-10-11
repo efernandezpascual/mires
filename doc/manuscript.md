@@ -299,7 +299,8 @@ influenced by the fact that recording periods did not match across all
 eight sites, we repeated the analyses using only full-year,
 contemporaneous data series (01 Jan 2015 - 31 Dec 2017, excluding La
 Vega Comeya); the results of these analyses were the same as the ones
-presented in this article (Supplementary **Tables S1** and **S2**).
+presented in this article ([Supplementary **Tables S1** and
+**S2**](https://github.com/efernandezpascual/mires/blob/master/doc/supplementary.md)).
 
 # Results
 
@@ -576,8 +577,10 @@ version of record of the repository will be deposited in Zenodo.
 
 # Supporting information
 
-*Tables S1-S2* Results of the statistical analyses, repeated using only
-the contemporaneous full-year data series.
+[*Tables
+S1-S2*](https://github.com/efernandezpascual/mires/blob/master/doc/supplementary.md)
+Results of the statistical analyses, repeated using only the
+contemporaneous full-year data series.
 
 # References
 
