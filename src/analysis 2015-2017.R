@@ -2,6 +2,19 @@ library(tidyverse); library(lubridate)
 
 load("results/logs.RData")
 
+# Full records for plotting
+
+merge(temperatures, header) %>%
+  arrange(Elevation, Site) %>%
+  mutate(Facet = paste(Elevation, Mire, sep = " m a.s.l. - ")) -> recordsdf
+
+# 2015-2016 only for analysis
+
+temperatures %>%
+  filter(Time >= as.Date("2015-01-01")) %>%
+  filter(Time <= as.Date("2017-12-31")) %>%
+  filter(! Logger %in% c("A511BE", "A511C1")) -> temperatures
+
 # Calculations
 
 ## Bioclimatic variables as defined by US Geological Survey, WorlClim
@@ -117,13 +130,14 @@ rbind(
     group_by(Trait) %>%
     do(t.testEFPgreater(.))) -> ttests
 
+
 #----------------------------------------------------------------------------
 
 # Tables
 
 ## Table 1 - Study sites
 
-temperatures %>%
+recordsdf %>%
   group_by(Logger) %>%
   summarise(Start = min(Time),
             End = max(Time),
@@ -178,7 +192,8 @@ header %>%
 header %>%
   select(Site, Logger, Groundwater, Mire) %>%
   merge(rbind(bioLoggers, bioCHELSA), by = "Logger") %>%
-  spread(Source, Value) -> bio
+  spread(Source, Value) %>%
+  na.omit -> bio
 
 RMSE <- function(df) {
   require(Metrics)
@@ -275,7 +290,7 @@ ggplotGrob(
     theme(panel.background = element_rect(color = "grey96", fill = "grey96"),
           legend.position = "top", legend.title = element_blank(),
           panel.border = element_rect(colour = "black", fill = NA, size = 1))) -> g2
- 
+
 ### Put together
 
 g1 +
@@ -549,17 +564,17 @@ peakdf %>%
 
 save(ttests, table1, table2, table3, file = "results/MSoutput.RData") # Save numerical results and tables to build manuscript
 
-ggsave(plot1, file = "results/Fig1.tiff", 
-       path = NULL, scale = 1, width = 170, height = 85, units = "mm", dpi = 300) # Save figures to build manuscript
+ggsave(plot1, file = "results/Fig1.png", 
+       path = NULL, scale = 1, width = 170, height = 85, units = "mm", dpi = 600) # Save figures to build manuscript
 
-ggsave(plot2, file = "results/Fig2.tiff", 
-       path = NULL, scale = 1, width = 170, height = 250, units = "mm", dpi = 300)
+ggsave(plot2, file = "results/Fig2.png", 
+       path = NULL, scale = 1, width = 170, height = 250, units = "mm", dpi = 600)
 
-ggsave(plot3, file = "results/Fig3.tiff", 
-       path = NULL, scale = 1, width = 170, height = 70, units = "mm", dpi = 300)
+ggsave(plot3, file = "results/Fig3.png", 
+       path = NULL, scale = 1, width = 170, height = 70, units = "mm", dpi = 600)
 
-ggsave(plot4, file = "results/Fig4.tiff", 
-       path = NULL, scale = 1, width = 170, height = 170, units = "mm", dpi = 300)
+ggsave(plot4, file = "results/Fig4.png", 
+       path = NULL, scale = 1, width = 170, height = 170, units = "mm", dpi = 600)
 
-ggsave(plot5, file = "results/Fig5.tiff", 
-       path = NULL, scale = 1, width = 100, height = 100, units = "mm", dpi = 300)
+ggsave(plot5, file = "results/Fig5.png", 
+       path = NULL, scale = 1, width = 100, height = 100, units = "mm", dpi = 600)

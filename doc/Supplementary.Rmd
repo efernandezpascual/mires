@@ -1,0 +1,167 @@
+---
+title: "Supporting information for Mire microclimate: groundwater buffers temperature in waterlogged versus dry soils"
+output: 
+  bookdown::word_document2:
+    reference_docx: ijctemplate.docx
+bibliography: refs.bib
+biblio-style: international-journal-of-climatology.csl
+link-citations: yes
+always_allow_html: true
+---
+  
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r message = FALSE, echo = FALSE, warning = FALSE}
+library(tidyverse); library(flextable); library(lubridate)
+load("../results/logs.RData")
+
+# 2015-2016 only for analysis
+
+temperatures %>%
+  filter(Time >= as.Date("2015-01-01")) %>%
+  filter(Time <= as.Date("2017-12-31")) %>%
+  filter(! Logger %in% c("A511BE", "A511C1")) -> temperatures
+
+# Calculations
+
+## Bioclimatic variables as defined by US Geological Survey, WorlClim
+
+### Bio 2 Annual Mean Diurnal Range
+
+temperatures %>%
+  group_by(Logger, Day = floor_date(Time, "day")) %>%
+  summarise(Tmax = max(Temperature), 
+            Tmin = min(Temperature),
+            Tdif = Tmax - Tmin) %>%
+  group_by(Logger) %>%
+  summarise(`Diurnal range` = mean(Tdif)) -> bio2
+
+### Bio 5 Max Temperature of Warmest Month
+
+temperatures %>%
+  group_by(Logger, Day = floor_date(Time, "day")) %>%
+  summarise(Tmax = max(Temperature)) %>%
+  mutate(Month = month(Day)) %>%
+  group_by(Logger, Month) %>%
+  summarise(`Summer max` = mean(Tmax)) %>%
+  group_by(Logger) %>%
+  filter(`Summer max` == max(`Summer max`)) %>%
+  select(-Month) -> bio5
+
+### Bio 6 Min Temperature of the Coldest Month
+
+temperatures %>%
+  group_by(Logger, Day = floor_date(Time, "day")) %>%
+  summarise(Tmin = min(Temperature)) %>%
+  mutate(Month = month(Day)) %>%
+  group_by(Logger, Month) %>%
+  summarise(`Winter min` = mean(Tmin)) %>%
+  group_by(Logger) %>%
+  filter(`Winter min` == min(`Winter min`)) %>%
+  select(-Month) -> bio6
+
+### Merge and calculate Bio 7 Annual Temperature Range
+
+bio2 %>%
+  merge(bio5) %>%
+  merge(bio6) %>%
+  mutate(`Annual range` = 
+           `Summer max` -
+           `Winter min`) -> bioclimatics
+
+# Tables
+
+## Paired T-tests
+
+t.testEFP <- function(df) 
+{
+  t <- t.test(df$Waterlogged, df$Dry, alternative = "less", paired = TRUE)
+  data.frame(t$statistic,
+             t$p.value,
+             t$estimate,
+             t$conf.int[1],
+             t$conf.int[2]
+  )
+}
+
+t.testEFPgreater <- function(df) 
+{
+  t <- t.test(df$Waterlogged, df$Dry, alternative = "greater", paired = TRUE)
+  data.frame(t$statistic,
+             t$p.value,
+             t$estimate,
+             t$conf.int[1],
+             t$conf.int[2]
+  ) # In the case of the minimum temperature is the opposite hypothesis
+}
+
+rbind(
+  merge(header[, 1:8], bioclimatics, by = "Logger") %>% 
+    gather(Trait, Value, `Diurnal range`:`Annual range`) %>%
+    dplyr::select(Site, Groundwater, Value, Trait, Value) %>%
+    spread(Groundwater, Value) %>%
+    filter(! Trait %in% "Winter min") %>%
+    group_by(Trait) %>%
+    do(t.testEFP(.)),
+  merge(header[, 1:8], bioclimatics, by = "Logger") %>% 
+    gather(Trait, Value, `Diurnal range`:`Annual range`) %>%
+    dplyr::select(Site, Groundwater, Value, Trait, Value) %>%
+    spread(Groundwater, Value) %>%
+    filter(Trait %in% "Winter min") %>%
+    group_by(Trait) %>%
+    do(t.testEFPgreater(.))) -> ttests
+
+## Table 3 - Chelsa
+
+bioclimatics %>%
+  gather(Variable, Value, `Diurnal range`:`Annual range`) %>%
+  mutate(Source = "Loggers") -> bioLoggers
+
+header %>%
+  select(Logger, `Diurnal range`:`Annual range`) %>%
+  gather(Variable, Value, `Diurnal range`:`Annual range`) %>%
+  mutate(Source = "CHELSA") -> bioCHELSA
+
+header %>%
+  select(Site, Logger, Groundwater, Mire) %>%
+  merge(rbind(bioLoggers, bioCHELSA), by = "Logger") %>%
+  spread(Source, Value) %>%
+  na.omit -> bio
+
+RMSE <- function(df) {
+  require(Metrics)
+  data.frame(RMSE = rmse(df$Loggers, df$CHELSA))}
+
+CORR <- function(df) {
+  c <- cor.test(df$Loggers, df$CHELSA)
+  data.frame(t = c$statistic,
+             df = c$parameter,
+             p = c$p.value,
+             r = c$estimate)}
+
+bio %>%
+  group_by(Variable, Groundwater) %>%
+  do(CORR(.)) -> corrtable # Pearson's correlation
+
+bio %>%
+  group_by(Variable, Groundwater) %>%
+  do(RMSE(.)) -> rmsetable # Root-mean-square error (RMSE)
+
+merge(corrtable, rmsetable) %>%
+  mutate(RMSE = round(RMSE, 2),
+         r = round(r, 2),
+         t = round(t, 3),
+         p = round(p, 3)) %>%
+  rename(`RMSE (ºC)` = RMSE,
+         `Pearson's r` = r) -> chelsa
+```
+
+```{r table1, echo = FALSE}
+regulartable(ttests) %>% width(width = 1) %>% set_caption("Table S1: Results of the t-tests comparing the paired waterlogged-dry soil bioclimatic variables. Analysis performed with full-year, contemporaneous data series (2015-2017).")
+```
+
+```{r table3, echo = FALSE}
+regulartable(chelsa) %>% width(width = 1) %>% set_caption("Table S2: Results of the linear models predicting the soil bioclimatic variables from the CHELSA air temperatures, per bioclimatic variable and groundwater situation. RMSE is the root-mean-square error, a measure of the accuracy of the predictions (lower values indicate higher accuracy). Analysis performed with full-year, contemporaneous data series (2015-2017).")
+```

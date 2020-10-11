@@ -1,0 +1,54 @@
+---
+title: "Ref. JOC-20-0599.R1 - Response to reviewers"
+author: "Eduardo Fernández-Pascual & Eva Correia-Álvarez"
+date: "`r format(Sys.time(), '%d/%m/%Y')`"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Reviewer: 1
+
+> *My main concern, which I think is possible to smooth out, is linked to the variable length of the monitored time. If there is a comparison made among the sites, this should be based on the same time intervals monitored. In the line 181, I understood that the average for the whole period was calculated. However, the periods were not the same and importantly there are differences among years and an obvious pattern in the data. Looking at Figure 2, there is a clear difference between 2015-2016 and 2019-2020 measurements from any sites (La Recoleta, La Bruxa). It is not clear how much noise this can introduce to the data and results.	I would suggest rerunning the analyses based on data from 2015-2016 only, and for 7 sites which all have the data from this period. If there is no difference, make these results available at least in Supplementary and comment on them in the text. You can also present the data as they are and base your statistical testing only on these data, as being fully comparable.*
+
+To check the reviewer's concern, we have repeated the analysis with only the contemporaneous full-year data series (i.e. Jan 2015-Dec 2017, excluding La Vega Comeya). The output of this analysis did not differ in any significant way from the original analysis using the full datasets. We comment on this in the methods. We have also prepared a supplementary material with the results of the repeated analyses, but in our opinion this supplement adds unnecessary complexity and could be excluded from the final publication, if the editor agrees.
+
+> *Speaking about the testing, please make sure that the data have normal distribution if T-test is your stat (it is sensitive on outliers, especially if n=8). This should be added in the Methods and clearly stated that there was a normal error structure. Otherwise, you better using nonparametric stat as Wilcoxon pair test. The same for Pearson, but the point distribution is shown in Fig. 4 suggests it is okay.*
+
+We have checked whether data meet the normality assumption using the Shapiro-Wilk Normality Test, the assumption was met in all cases. This is now indicated in the text.
+
+> *I am not sure if the statements provided in the lines 208-210 about the wider range and higher maximums were validated based on any stats.*
+
+These statements are validated by the t-tests, described in following paragraphs.
+
+> *I am not sure if the explanation given at 255-259 does not have a flaw in its logic. Maybe I did not get it right, but for me, there is a difference between a gradient and seasonal or diurnal variation. In this part, you are mixing to levels of variation – among sites (differences between sites – a climatic gradient) and within a site, variation over the season or day at the sites. Maybe the problem is only in the wording “the cold end of the thermal gradient”. It confuses me if you call winter and night as the cold end of the gradient. Would it be possible to rephrase this?*
+
+We have substituted the word *gradient* with the word *spectrum*.
+
+> *As there are only 8 values behind each bar in Fig. 3, it might have the sense to present the values themselves. You can then connect individual pairs by a line. Please also add significant above each comparison.*
+
+The change proposed would make Table 2 redundant, and we would prefer to keep it, showing the actual numbers. Since these are the effect sizes in ºC, looking at them gives a quick impression of the strength of the buffer at each site and for each bioclimatic variable.
+
+> *I assume that Patrick A Raney or Patrick A. Raney should be referred from the text as Patrick. It appears at many places in the text, as likely an error of the reference manager.*
+
+Indeed, it was a problem with the reference manager, and should be corrected now.
+
+> *Line 271: missing space at 15 °C (15°C)*
+
+Corrected.
+
+# Reviewer: 2
+
+> *Line 108 – wouldn’t it depend on whether the region is becoming wetter or drier the amount of water being delivered to fens whether they were vulnerable to drying?*
+
+We have changed the sentence to *Global warming would also result in warmer groundwater delivered to fens, but there is a gap of knowledge about the rate of such changes and their ecological consequences within the mires*.
+
+> *Lines 173-177 –I’d recommend deleting line 173-176 removing the temporary link for peer review to save space in the final manuscript. You can also delete the git-hub reference as you already provide data availability in lines 329.*
+
+We removed these lines.
+
+> *Line 304: micro-refugees  has an extra ‘e’ that should be deleted.*
+
+Corrected.
