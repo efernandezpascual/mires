@@ -549,17 +549,17 @@ peakdf %>%
 
 save(ttests, table1, table2, table3, file = "results/MSoutput.RData") # Save numerical results and tables to build manuscript
 
-ggsave(plot1, file = "results/Fig1.tiff", 
+ggsave(plot1, file = "results/Fig1.png", 
        path = NULL, scale = 1, width = 170, height = 85, units = "mm", dpi = 300) # Save figures to build manuscript
 
-ggsave(plot2, file = "results/Fig2.tiff", 
+ggsave(plot2, file = "results/Fig2.png", 
        path = NULL, scale = 1, width = 170, height = 250, units = "mm", dpi = 300)
 
-ggsave(plot3, file = "results/Fig3.tiff", 
+ggsave(plot3, file = "results/Fig3.png", 
        path = NULL, scale = 1, width = 170, height = 70, units = "mm", dpi = 300)
 
-ggsave(plot4, file = "results/Fig4.tiff", 
+ggsave(plot4, file = "results/Fig4.png", 
        path = NULL, scale = 1, width = 170, height = 170, units = "mm", dpi = 300)
 
-ggsave(plot5, file = "results/Fig5.tiff", 
+ggsave(plot5, file = "results/Fig5.png", 
        path = NULL, scale = 1, width = 100, height = 100, units = "mm", dpi = 300)

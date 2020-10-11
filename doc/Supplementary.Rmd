@@ -1,8 +1,6 @@
 ---
 title: "Supporting information for Mire microclimate: groundwater buffers temperature in waterlogged versus dry soils"
-output: 
-  bookdown::word_document2:
-    reference_docx: ijctemplate.docx
+output: github_document
 bibliography: refs.bib
 biblio-style: international-journal-of-climatology.csl
 link-citations: yes
@@ -14,7 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ```{r message = FALSE, echo = FALSE, warning = FALSE}
-library(tidyverse); library(flextable); library(lubridate)
+library(tidyverse); library(lubridate)
 load("../results/logs.RData")
 
 # 2015-2016 only for analysis
@@ -159,9 +157,9 @@ merge(corrtable, rmsetable) %>%
 ```
 
 ```{r table1, echo = FALSE}
-regulartable(ttests) %>% width(width = 1) %>% set_caption("Table S1: Results of the t-tests comparing the paired waterlogged-dry soil bioclimatic variables. Analysis performed with full-year, contemporaneous data series (2015-2017).")
+ttests %>% kableExtra::kable(caption = "**Table S1** *Results of the t-tests comparing the paired waterlogged-dry soil bioclimatic variables. Analysis performed with full-year, contemporaneous data series (2015-2017).*", digits = 3, format = "pandoc")
 ```
 
 ```{r table3, echo = FALSE}
-regulartable(chelsa) %>% width(width = 1) %>% set_caption("Table S2: Results of the linear models predicting the soil bioclimatic variables from the CHELSA air temperatures, per bioclimatic variable and groundwater situation. RMSE is the root-mean-square error, a measure of the accuracy of the predictions (lower values indicate higher accuracy). Analysis performed with full-year, contemporaneous data series (2015-2017).")
+chelsa %>% kableExtra::kable(caption = "**Table S2** *Results of the linear models predicting the soil bioclimatic variables from the CHELSA air temperatures, per bioclimatic variable and groundwater situation. RMSE is the root-mean-square error, a measure of the accuracy of the predictions (lower values indicate higher accuracy). Analysis performed with full-year, contemporaneous data series (2015-2017).*", format = "pandoc")
 ```
