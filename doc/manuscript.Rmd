@@ -18,9 +18,9 @@ load("../results/logs.RData")
 load("../results/MSoutput.RData")
 ```
 
-Eduardo Fernández-Pascual^1^ ^+^, Eva Correia-Álvarez^2^
+Eduardo Fernández-Pascual^1^ ^+^, Eva Correia-Álvarez^1^
 
-^1^ Universidad de Oviedo, ^2^ Independent researcher
+^1^ Universidad de Oviedo
 
 ^+^ Correspondence: Departamento de Biología de Organismos y Sistemas, Universidad de Oviedo, C/ Catedrático Rodrigo Uría, 33006 Oviedo/Uviéu, Spain. Email: efernandezpascual@gmail.com. Telephone: +34985104787.
 

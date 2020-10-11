@@ -3,9 +3,9 @@ dry soils
 ================
 
 Eduardo Fernández-Pascual<sup>1</sup> <sup>+</sup>, Eva
-Correia-Álvarez<sup>2</sup>
+Correia-Álvarez<sup>1</sup>
 
-<sup>1</sup> Universidad de Oviedo, <sup>2</sup> Independent researcher
+<sup>1</sup> Universidad de Oviedo
 
 <sup>+</sup> Correspondence: Departamento de Biología de Organismos y
 Sistemas, Universidad de Oviedo, C/ Catedrático Rodrigo Uría, 33006
@@ -577,8 +577,8 @@ version of record of the repository will be deposited in Zenodo.
 
 # Supporting information
 
-[*Tables
-S1-S2*](https://github.com/efernandezpascual/mires/blob/master/doc/supplementary.md)
+[**Tables
+S1-S2**](https://github.com/efernandezpascual/mires/blob/master/doc/supplementary.md)
 Results of the statistical analyses, repeated using only the
 contemporaneous full-year data series.
 
