@@ -41,10 +41,8 @@ elevations. These results highlight the potential refugial character of
 mires under global warming, and the need to integrate microclimate
 measurements into climate change models.
 
-# Keywords
-
-bog, CHELSA, climatic model, datalogger, fen, peatland, soil
-temperature, wetland
+**Keywords:** bog, CHELSA, climatic model, datalogger, fen, peatland,
+soil temperature, wetland
 
 # Introduction
 
@@ -572,8 +570,8 @@ the FP7 – Marie Curie - COFUND programme of the European Commission
 
 The original data, as well as the R code for the analysis and creation
 of the manuscript, can be accessed at the GitHub repository
-<https://github.com/efernandezpascual/mires>. Upon publication, a
-version of record of the repository will be deposited in Zenodo.
+<https://github.com/efernandezpascual/mires>. A version of record of the
+repository can be found at <https://doi.org/10.5281/zenodo.4081418>.
 
 # Supporting information
 

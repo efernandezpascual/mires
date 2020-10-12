@@ -7,6 +7,8 @@ output: github_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4081418.svg)](https://doi.org/10.5281/zenodo.4081418)
+
 ![Alkaline fen in the Cantabrian Mountains](data/Sierra Cebolleda.jpg)
 
 # Mire microclimate: groundwater buffers temperature in waterlogged versus dry soils

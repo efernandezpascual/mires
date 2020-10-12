@@ -1,6 +1,5 @@
 ---
 title: "Mire microclimate: groundwater buffers temperature in waterlogged versus dry soils"
-subtitle: "Short title: Testing the thermal buffer of mire groundwater"
 output: github_document
 bibliography: refs.bib
 biblio-style: international-journal-of-climatology.csl
@@ -34,9 +33,7 @@ Waterlogged soils had less diurnal thermal amplitude (-2.3 ÂºC), less annual the
 
 We conclude that mire soils show a thermal buffer effect that insulates them from the surrounding landscape. This effect is stronger at the warm end of the climatic spectrum, i.e. during summer and at lower elevations. These results highlight the potential refugial character of mires under global warming, and the need to integrate microclimate measurements into climate change models.
 
-# Keywords
-
-bog, CHELSA, climatic model, datalogger, fen, peatland, soil temperature, wetland 
+**Keywords:** bog, CHELSA, climatic model, datalogger, fen, peatland, soil temperature, wetland 
 
 # Introduction
 
@@ -124,7 +121,7 @@ E.F.P. received financial support from the Government of Asturias and the FP7 â€
 
 # Data availability
 
-The original data, as well as the R code for the analysis and creation of the manuscript, can be accessed at the GitHub repository https://github.com/efernandezpascual/mires. Upon publication, a version of record of the repository will be deposited in Zenodo.
+The original data, as well as the R code for the analysis and creation of the manuscript, can be accessed at the GitHub repository https://github.com/efernandezpascual/mires. A version of record of the repository can be found at https://doi.org/10.5281/zenodo.4081418.
 
 # Supporting information
 
