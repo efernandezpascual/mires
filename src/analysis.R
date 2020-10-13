@@ -162,7 +162,8 @@ merge(header[, 1:10], bioclimatics) %>%
   merge(header[, c(3, 10)], by = "Site") %>%
   arrange(Elevation) %>%
   select(Site, `Annual range`:`Winter min`) %>%
-  unique -> table2 
+  unique %>%
+  remove_rownames() -> table2 
 
 ## Table 3 - Chelsa
 

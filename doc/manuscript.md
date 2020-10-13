@@ -14,10 +14,10 @@ Oviedo/Uviéu, Spain. Email: <efernandezpascual@gmail.com>. Telephone:
 
 # Abstract
 
-Ecosystems adapt differently to global warming through microclimate
+Ecosystems adapt differently to global warming through microclimatic
 factors. Mires are sensitive wetland habitats that strongly rely on
 local soil properties, which makes them a good model to understand how
-local climate parameters counteract the effects of climate change. We
+local climatic parameters counteract the effects of climate change. We
 quantified the temperature buffering effect in waterlogged mire soils as
 compared with adjacent dry soils.
 
@@ -29,7 +29,7 @@ measures with air temperatures predicted by the CHELSA model.
 Waterlogged soils had less diurnal thermal amplitude (-2.3 ºC), less
 annual thermal amplitude (-5.1 ºC), cooler summer maximums (-4.3 ºC) and
 warmer winter minimums (+0.8 ºC). CHELSA air temperatures only
-correlated significantly (p \< 0.05) with the winter minimum
+correlated significantly (p \< 0.05) with winter minimum soil
 temperatures (Pearson’s r \> 0.83), and CHELSA predictions were less
 accurate (higher RMSE) for waterlogged soils, except for the summer
 maximums.
@@ -117,7 +117,7 @@ Since root-zone temperature is a major determinant of plant
 ecophysiology (Körner and Paulsen [2004](#ref-RN3024)), the groundwater
 buffer effect is expected to allow mire plants to live in a wider range
 of air temperatures than they could otherwise. Indeed, mires have a
-relatively homogeneous flora across their range despite their broad
+relatively homogeneous flora across their range, despite their broad
 distribution. In Europe, fens are distributed from the Iberian Peninsula
 to boreal Fennoscandia and from low valleys to the alpine belt (Peterka
 et al. [2017](#ref-RN4678)). In the arctic, temperate-continental and
@@ -134,17 +134,17 @@ extent of wetlands as it has been shown in the Midwestern United States
 It is evident that the groundwater buffer effect will play a determinant
 role in the response of mire habitats to climate change (Raney
 [2014](#ref-RN4936)). Both bogs and fens are actively peat forming and
-are dependent on precipitation, whereas fens rely also on sources of
-telluric water from mineral ground. Moreover, they show a mosaic of
-microreliefs and a specific plant cover zonation which makes them
-especially sensitive to small changes in wetness. Climate change affects
-the quantity, timing and spatial distribution of precipitation, leading
-to changes in surface wetness which alter the intensity or organic
-decomposition by disturbing the conditions for plant grow and the depth
-of air penetration (Bragg [2002](#ref-RN4935)). Global warming would
-also result in warmer groundwater delivered to fens, but there is a gap
-of knowledge about the rate of such changes and their ecological
-consequences within the mires (Raney [2014](#ref-RN4936)).
+depend on precipitation, but fens rely also on sources of telluric water
+from mineral ground. Moreover, they show a mosaic of microreliefs and a
+specific plant cover zonation which makes them especially sensitive to
+small changes in wetness. Climate change affects the quantity, timing
+and spatial distribution of precipitation, leading to changes in surface
+wetness which alter the intensity or organic decomposition by disturbing
+the conditions for plant grow and the depth of air penetration (Bragg
+[2002](#ref-RN4935)). Global warming would also result in warmer
+groundwater delivered to fens, but there is a gap of knowledge about the
+rate of such changes and their ecological consequences within the mires
+(Raney [2014](#ref-RN4936)).
 
 As is the case for all azonal habitats, locally measured temperatures
 are essential to understand these processes. Available references
@@ -361,16 +361,16 @@ higher minimums (t = 2.86, p = 0.012, effect size = 0.77 ºC, 95 % CI =
 0.26, ∞), and (d) smaller annual fluctuations (t = -3.95, p = 0.003,
 effect size = -5.05 ºC, 95 % CI = -∞, -2.63).
 
-|    | Site             | Annual range | Diurnal range | Summer max | Winter min |
-| -- | :--------------- | -----------: | ------------: | ---------: | ---------: |
-| 1  | El Molinucu      |       \-7.80 |        \-4.90 |     \-6.59 |       1.21 |
-| 3  | La Malva         |      \-10.81 |        \-5.14 |    \-10.25 |       0.56 |
-| 5  | La Vega Comeya   |       \-3.63 |        \-2.99 |     \-3.51 |       0.12 |
-| 7  | La Bruxa         |       \-1.09 |        \-0.88 |       0.99 |       2.08 |
-| 9  | La Veiga Cimera  |       \-3.41 |        \-2.21 |     \-3.47 |     \-0.06 |
-| 11 | La Recoleta      |       \-8.81 |        \-2.62 |     \-8.85 |     \-0.04 |
-| 13 | El Riotuertu     |       \-3.62 |          1.12 |     \-2.28 |       1.34 |
-| 15 | La Vega Lliordes |       \-1.26 |        \-0.71 |     \-0.28 |       0.98 |
+| Site             | Annual range | Diurnal range | Summer max | Winter min |
+| :--------------- | -----------: | ------------: | ---------: | ---------: |
+| El Molinucu      |       \-7.80 |        \-4.90 |     \-6.59 |       1.21 |
+| La Malva         |      \-10.81 |        \-5.14 |    \-10.25 |       0.56 |
+| La Vega Comeya   |       \-3.63 |        \-2.99 |     \-3.51 |       0.12 |
+| La Bruxa         |       \-1.09 |        \-0.88 |       0.99 |       2.08 |
+| La Veiga Cimera  |       \-3.41 |        \-2.21 |     \-3.47 |     \-0.06 |
+| La Recoleta      |       \-8.81 |        \-2.62 |     \-8.85 |     \-0.04 |
+| El Riotuertu     |       \-3.62 |          1.12 |     \-2.28 |       1.34 |
+| La Vega Lliordes |       \-1.26 |        \-0.71 |     \-0.28 |       0.98 |
 
 **Table 2** *Groundwater buffer effect per mire and bioclimatic
 variable. The buffer effect was calculated as the difference between the
@@ -523,8 +523,8 @@ sun-heated soil. In addition to the water buffering effect, other
 features may explain the differences between our results and CHELSEA
 values, like the height of temperature measurement (5 cm below the upper
 layer of the soil in our study versus 2 m above the ground in CHELSA);
-the temporal scale of observation (hourly based for a 5 years period in
-our study versus a 34 years period); and the spatial resolution (c. 1 m
+the temporal scale of observation (hourly based for a 5-year period in
+our study versus a 34-year period); and the spatial resolution (c. 1 m
 in our study versus c. 1 km). Be that as it may, our results bring out
 the importance of considering local factors as drivers of microclimatic
 changes (Zellweger et al. [2019](#ref-RN4762)). These factors contribute
