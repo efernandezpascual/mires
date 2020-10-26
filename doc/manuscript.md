@@ -407,7 +407,7 @@ predictions (lower values indicate higher accuracy).*
 
 <div class="figure">
 
-<img src="../results/Fig4.png" alt="**Figure 4** *Scatter plots of the bioclimatic variables predicted by CHELSA air temperatures vs. soil temperatures measured in situ, in dry and waterlogged points.*" width="2007" />
+<img src="../results/Fig4.png" alt="**Figure 4** *Scatter plots of the bioclimatic variables predicted by CHELSA air temperatures vs. soil temperatures measured in situ, in dry and waterlogged points.*" width="1653" />
 
 <p class="caption">
 

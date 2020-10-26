@@ -558,10 +558,10 @@ ggsave(plot2, file = "results/Fig2.png",
        path = NULL, scale = 1, width = 170, height = 220, units = "mm", dpi = 300)
 
 ggsave(plot3, file = "results/Fig3.png", 
-       path = NULL, scale = 1, width = 170, height = 85, units = "mm", dpi = 300)
+       path = NULL, scale = 1, width = 170, height = 60, units = "mm", dpi = 300)
 
 ggsave(plot4, file = "results/Fig4.png", 
-       path = NULL, scale = 1, width = 170, height = 170, units = "mm", dpi = 300)
+       path = NULL, scale = 1, width = 140, height = 140, units = "mm", dpi = 300)
 
 ggsave(plot5, file = "results/Fig5.png", 
        path = NULL, scale = 1, width = 85, height = 85, units = "mm", dpi = 300)
