@@ -288,7 +288,7 @@ g1 +
 img1 <- png::readPNG("data/Riotuertu.png")
 plot1b <- grid::rasterGrob(img1, width = unit(85, "mm"), height = unit(85, "mm"), just = "centre") 
 
-cowplot::plot_grid(plot1a, plot1b, ncol = 2, labels = c("a", "b")) -> plot1
+cowplot::plot_grid(plot1a, plot1b, ncol = 2, labels = c("(a)", "(b)")) -> plot1
 
 ## Figure 2 - Datalogger records
 
@@ -337,7 +337,7 @@ recordsdf %>%
         legend.margin = margin(0, 0, 0, 0),
         legend.box.margin = margin(0, 0, -7.5, 0),
         plot.margin = unit(c(0, 0, 0, 0), "cm")) +
-  guides(colour = guide_legend(override.aes = list(alpha = 1))) +
+  guides(colour = guide_legend(override.aes = list(alpha = 1, size = 3))) +
   scale_color_manual(values = c("red3", "turquoise3")) -> plot2
 
 ## Fig 3 - Effect sizes
@@ -379,7 +379,7 @@ bio %>%
   filter(Variable == "Annual range") %>%
   ggplot(aes(CHELSA, Loggers)) + 
   geom_point(size = 4, aes(color = Groundwater), alpha = 0.65) + 
-  geom_smooth(method = "lm", se = F, linetype = "dashed", aes(color = Groundwater), alpha = 0.65, show.legend = FALSE) +
+  geom_smooth(method = "lm", se = F, linetype = "dashed", aes(color = Groundwater), show.legend = FALSE, alpha = 0.65) +
   geom_abline(intercept = 0, slope = 1, linetype = "dashed") + 
   ggthemes::theme_tufte() + 
   scale_x_continuous(labels = scales::number_format(accuracy = 1)) +
@@ -405,7 +405,7 @@ bio %>%
   filter(Variable == "Diurnal range") %>%
   ggplot(aes(CHELSA, Loggers)) + 
   geom_point(size = 4, aes(color = Groundwater), alpha = 0.65) + 
-  geom_smooth(method = "lm", se = F, linetype = "dashed", aes(color = Groundwater), alpha = 0.65, show.legend = FALSE) +
+  geom_smooth(method = "lm", se = F, linetype = "dashed", aes(color = Groundwater), show.legend = FALSE, alpha = 0.65) +
   geom_abline(intercept = 0, slope = 1, linetype = "dashed") + 
   ggthemes::theme_tufte() + 
   scale_x_continuous(labels = scales::number_format(accuracy = 1)) +
@@ -432,7 +432,7 @@ bio %>%
   filter(Variable == "Summer max") %>%
   ggplot(aes(CHELSA, Loggers)) + 
   geom_point(size = 4, aes(color = Groundwater), alpha = 0.65) + 
-  geom_smooth(method = "lm", se = F, linetype = "dashed", aes(color = Groundwater), alpha = 0.65, show.legend = FALSE) +
+  geom_smooth(method = "lm", se = F, linetype = "dashed", aes(color = Groundwater), show.legend = FALSE, alpha = 0.65) +
   geom_abline(intercept = 0, slope = 1, linetype = "dashed") + 
   ggthemes::theme_tufte() + 
   scale_x_continuous(labels = scales::number_format(accuracy = 1)) +
@@ -458,7 +458,7 @@ bio %>%
   filter(Variable == "Winter min") %>%
   ggplot(aes(CHELSA, Loggers)) + 
   geom_point(size = 4, aes(color = Groundwater), alpha = 0.65) + 
-  geom_smooth(method = "lm", se = F, linetype = "dashed", aes(color = Groundwater), alpha = 0.65, show.legend = FALSE) +
+  geom_smooth(method = "lm", se = F, linetype = "dashed", aes(color = Groundwater), show.legend = FALSE, alpha = 0.65) +
   geom_abline(intercept = 0, slope = 1, linetype = "dashed") + 
   ggthemes::theme_tufte() + 
   scale_x_continuous(labels = scales::number_format(accuracy = 1)) +
@@ -528,7 +528,8 @@ peakdf %>%
   geom_abline(intercept = 0, slope = 1, linetype = "dashed") +
   geom_point(alpha = 0.65) +
   ggrepel::geom_label_repel(aes(label = Site), data = meanpeaks, fill = alpha(c("white"), 0.5), 
-                            fontface = "bold", min.segment.length = 100, size = 3) +
+                            fontface = "bold", min.segment.length = 100, size = 2.5,
+                            label.padding = 0.1) +
   coord_fixed(ratio = 1, xlim = c(12.5, 42.5), ylim = c(12.5, 42.5), expand = TRUE, clip = "off") +
   xlab("Dry point daily max (°C)") + ylab("Watelogged point daily max (°C)") +
   scale_color_manual(values = c("darkcyan", "darkorange", "dodgerblue3", "purple", "forestgreen", "gold3", "darkred", "grey15")) + 
@@ -554,13 +555,14 @@ ggsave(plot1, file = "results/Fig1.png",
        path = NULL, scale = 1, width = 170, height = 85, units = "mm", dpi = 300) # Save figures to build manuscript
 
 ggsave(plot2, file = "results/Fig2.png", 
-       path = NULL, scale = 1, width = 170, height = 250, units = "mm", dpi = 300)
+       path = NULL, scale = 1, width = 170, height = 220, units = "mm", dpi = 300)
 
 ggsave(plot3, file = "results/Fig3.png", 
-       path = NULL, scale = 1, width = 170, height = 70, units = "mm", dpi = 300)
+       path = NULL, scale = 1, width = 170, height = 85, units = "mm", dpi = 300)
 
 ggsave(plot4, file = "results/Fig4.png", 
        path = NULL, scale = 1, width = 170, height = 170, units = "mm", dpi = 300)
 
 ggsave(plot5, file = "results/Fig5.png", 
-       path = NULL, scale = 1, width = 100, height = 100, units = "mm", dpi = 300)
+       path = NULL, scale = 1, width = 85, height = 85, units = "mm", dpi = 300)
+

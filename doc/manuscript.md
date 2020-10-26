@@ -139,7 +139,7 @@ from mineral ground. Moreover, they show a mosaic of microreliefs and a
 specific plant cover zonation which makes them especially sensitive to
 small changes in wetness. Climate change affects the quantity, timing
 and spatial distribution of precipitation, leading to changes in surface
-wetness which alter the intensity or organic decomposition by disturbing
+wetness which alter the intensity of organic decomposition by disturbing
 the conditions for plant grow and the depth of air penetration (Bragg
 [2002](#ref-RN4935)). Global warming would also result in warmer
 groundwater delivered to fens, but there is a gap of knowledge about the
@@ -202,7 +202,7 @@ on acid bedrocks, to alkaline calcareous fens
 
 <div class="figure">
 
-<img src="../results/Fig1.png" alt="**Figure 1** **(a)** *Location of the study sites in northern Spain.* **(b)** *Representation of the sampling design at El Riotuertu site. The position of the dry and waterlogged temperature loggers is indicated, the blue area represents the extent of the waterlogged mire habitat.*" width="4015" />
+<img src="../results/Fig1.png" alt="**Figure 1** **(a)** *Location of the study sites in northern Spain.* **(b)** *Representation of the sampling design at El Riotuertu site. The position of the dry and waterlogged temperature loggers is indicated, the blue area represents the extent of the waterlogged mire habitat.*" width="2007" />
 
 <p class="caption">
 
@@ -309,7 +309,7 @@ less variation at waterlogged points, for all eight site comparisons
 
 <div class="figure">
 
-<img src="../results/Fig2.png" alt="**Figure 2** *Hourly soil temperature records at the mire sites. The blue series was recorded within the mire, in a waterlogged area. The red series was recorded in a neighbouring dry area. Dataloggers were buried at 5 cm depth. The amplitude of diurnal temperature range in dry sites was reduced with increasing elevation, where the thermal buffer effect was also less apparent.*" width="4015" />
+<img src="../results/Fig2.png" alt="**Figure 2** *Hourly soil temperature records at the mire sites. The blue series was recorded within the mire, in a waterlogged area. The red series was recorded in a neighbouring dry area. Dataloggers were buried at 5 cm depth. The amplitude of diurnal temperature range in dry sites was reduced with increasing elevation, where the thermal buffer effect was also less apparent.*" width="2007" />
 
 <p class="caption">
 
@@ -334,7 +334,7 @@ maximums (**Fig. 3**).
 
 <div class="figure">
 
-<img src="../results/Fig3.png" alt="**Figure 3** *Average bioclimatic variables in the dry and waterlogged points. The bars represent the mean value, and the brackets the standard error of 8 records.*" width="4015" />
+<img src="../results/Fig3.png" alt="**Figure 3** *Average bioclimatic variables in the dry and waterlogged points. The bars represent the mean value, and the brackets the standard error of 8 records.*" width="2007" />
 
 <p class="caption">
 
@@ -407,7 +407,7 @@ predictions (lower values indicate higher accuracy).*
 
 <div class="figure">
 
-<img src="../results/Fig4.png" alt="**Figure 4** *Scatter plots of the bioclimatic variables predicted by CHELSA air temperatures vs. soil temperatures measured in situ, in dry and waterlogged points.*" width="4015" />
+<img src="../results/Fig4.png" alt="**Figure 4** *Scatter plots of the bioclimatic variables predicted by CHELSA air temperatures vs. soil temperatures measured in situ, in dry and waterlogged points.*" width="2007" />
 
 <p class="caption">
 
@@ -456,7 +456,7 @@ temperatures of the cold period. This indicates the importance of
 identifying root temperatures when working with plant communities. At
 high elevations of the study region, the soil can remain covered by snow
 for periods of winter, and this has its own insulating effect on soil
-temperatures (Körner [2003](#ref-RN2392)). Indeed, snow cover has being
+temperatures (Körner [2003](#ref-RN2392)). Indeed, snow cover has been
 described as one of the vertical features that affects vegetation
 distribution in a local manner (Maclean, Mosedale, and Bennie
 [2019](#ref-RN4760)). In any case, since this study was conducted at the
@@ -471,7 +471,7 @@ summer temperatures within the dry soils (\> 40 ºC). It must be noted
 that this difference of \> 15 ºC between the dry and waterlogged points
 of La Malva, which are separated by a few meters, is almost four times
 the warming expected in the study region at the end of this century (+ 4
-ºC) under the more extreme emissions scenario (Amblar-Francés et al.
+ºC) under the most extreme emissions scenario (Amblar-Francés et al.
 [2017](#ref-RN4939)). Whereas the rest of the study sites are flat, La
 Malva is a calcareous spring in a southeast-facing slope on limestone, a
 place experiencing sub-Mediterranean conditions at the micro-scale
@@ -479,7 +479,7 @@ place experiencing sub-Mediterranean conditions at the micro-scale
 and surrounded by a forest of evergreen oaks (*Quercus rotundifolia*
 Lam., *Quercus faginea* Lam.). This suggests the importance of
 groundwater in the existence of mire vegetation in Mediterranean areas
-(De Hoyos et al. [1996](#ref-RN4682)), not only from the
+(Aldasoro et al. [1996](#ref-RN4682)), not only from the
 water-availability aspect, but also providing cooling regulation during
 summer (Ellenberg [1988](#ref-RN3344)). The buffering is also prominent
 at one of the highest elevations, La Recoleta, which may be explained by
@@ -493,7 +493,7 @@ effects.
 
 <div class="figure">
 
-<img src="../results/Fig5.png" alt="**Figure 5** *Complementary temporal analysis of the groundwater buffer effect during peak hot events. Variation of soil temperatures at paired sites (dry vs. waterlogged points) during exceptionally warm days of the warm season. Exceptionally warm days were considered those with a daily maximum (at the dry point) belonging to the 90th percentile of daily maximums for the site. The 1:1 line (corresponding to no buffer effect) is shown, points falling to the right of this line show a buffer effect (i.e. soil temperatures at the waterlogged point are cooler than the neighbouring dry site).*" width="2362" />
+<img src="../results/Fig5.png" alt="**Figure 5** *Complementary temporal analysis of the groundwater buffer effect during peak hot events. Variation of soil temperatures at paired sites (dry vs. waterlogged points) during exceptionally warm days of the warm season. Exceptionally warm days were considered those with a daily maximum (at the dry point) belonging to the 90th percentile of daily maximums for the site. The 1:1 line (corresponding to no buffer effect) is shown, points falling to the right of this line show a buffer effect (i.e. soil temperatures at the waterlogged point are cooler than the neighbouring dry site).*" width="1003" />
 
 <p class="caption">
 
@@ -562,9 +562,11 @@ on moisture-driven ecosystems.
 
 # Acknowledgements
 
-E.F.P. received financial support from the Government of Asturias and
-the FP7 – Marie Curie - COFUND programme of the European Commission
-(Grant ‘Clarín’ ACB17-19).
+Eduardo Fernández-Pascual received financial support from the Government
+of Asturias and the FP7 – Marie Curie – COFUND programme of the European
+Commission (Grants “Clarín” ACA14-19 and ACB17-19). Logger installation
+was partly supported by the LIFE+ programme of the European Commission
+(project LIFE11/NAT/ES/707 - TREMEDAL).
 
 # Data availability
 
@@ -583,6 +585,14 @@ contemporaneous full-year data series.
 # References
 
 <div id="refs">
+
+<div id="ref-RN4682">
+
+Aldasoro, Juan José, C. Aedo, J. Muñoz, D De Hoyos, JC Vega, A Negro,
+and Gonzalo Moreno. 1996. “A survey on Cantabrian mires (Spain).”
+*Anales Del Jardín Botánico de Madrid* 54 (1): 472–89.
+
+</div>
 
 <div id="ref-RN4939">
 
@@ -647,14 +657,6 @@ et al. 2007. “Global negative vegetation feedback to climate warming
 responses of leaf litter decomposition rates in cold biomes.” *Ecology
 Letters* 10 (7): 619–27.
 <https://doi.org/10.1111/j.1461-0248.2007.01051.x>.
-
-</div>
-
-<div id="ref-RN4682">
-
-De Hoyos, D, Jesús Muñoz Fuente, A Negro, Juan José Aldasoro, JC Vega,
-and Gonzalo Moreno Moral. 1996. “A survey on Cantabrian mires (Spain).”
-*Anales Del Jardín Botánico de Madrid* 54 (1): 472–89.
 
 </div>
 
