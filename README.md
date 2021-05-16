@@ -36,4 +36,4 @@ Please cite any use of this repository as:
 > Fernández-Pascual E & Correia-Álvarez E (2021) [Mire microclimate:
 > Groundwater buffers temperature in waterlogged versus dry
 > soils.](https://doi.org/10.1002/joc.6893) *International Journal of
-> Climatology*.
+> Climatology* 41, E2949-E2958.
